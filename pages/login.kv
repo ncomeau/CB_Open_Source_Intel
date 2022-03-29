@@ -1,0 +1,231 @@
+<LoginWindow>
+    name: "login"
+    api_key: api_key
+    api_id: api_id
+    org_key: org_key
+    on_enter:
+        root.initWindow()
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "top"
+        MDToolbar:
+            title: "CB Open Source Intel"
+            anchor_title: "center"
+
+    MDCard:
+        size_hint: None, None
+        size: 650, 900
+        pos_hint: {"center_x":0.5,"center_y":0.45}
+        elevation: 10
+        padding: 20
+        spacing: 20
+        orientation: 'vertical'
+
+        MDLabel:
+            text: "Enter Creds"
+            font_style: "H6"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 10
+
+        Widget:
+            size_hint_y: None
+            height: 75
+
+        ClickableTextFieldRound:
+            id: api_key
+
+            width: 180
+            font_size:23
+            hint_text: "API Secret Key"
+            size_hint: 0.95, None
+            pos_hint: {"center_x":0.5}
+
+        Widget:
+            size_hint_y: None
+            height: 1
+
+        MDTextFieldRound:
+            id: api_id
+
+            password: False
+            hint_text: "API ID"
+            icon_left: "identifier"
+            size_hint: 0.95, None
+            pos_hint:{"center_x":0.5,}
+            padding:
+                self._lbl_icon_left.texture_size[1] + dp(10) if self.icon_left else dp(15),                 (self.height / 2) - (self.line_height / 2),                 self._lbl_icon_right.texture_size[1] + dp(20),                 0
+
+        Widget:
+            size_hint_y: None
+            height: 1
+
+        MDTextFieldRound:
+            id: org_key
+
+            password: False
+            hint_text: "Org Key"
+            icon_left: "weather-cloudy"
+            size_hint: 0.75, None
+            pos_hint:{"center_x":0.5,}
+            padding:
+                self._lbl_icon_left.texture_size[1] + dp(10) if self.icon_left else dp(15),                 (self.height / 2) - (self.line_height / 2),                 self._lbl_icon_right.texture_size[1] + dp(20),                 0
+
+        Widget:
+            size_hint_y: None
+            height: 35
+
+        MDRoundFlatIconButton:
+            icon: "upload"
+            pos_hint:{"center_x":0.5,}
+            size_hint: 0.5, 0.05
+            font_size: 24
+            height:1
+            text: "Upload Creds"
+            md_bg_color: 0, 0.7, 0.2, 1
+            on_release:
+                root.file_manager_open()
+
+        Widget:
+            size_hint_y: None
+            height: 15
+
+        MDFillRoundFlatButton:
+            pos_hint:{"center_x":0.5,}
+            size_hint: 0.6, 0.05
+            font_size: 24
+            height:1
+            text: "Submit"
+            color: (0,0,0,1)
+            background_normal: ''
+            background_color: (17/255,198/255,1,1)
+            on_release:
+                root.loginBtn()
+
+        Widget:
+            size_hint_y: None
+            height: 15
+
+        ActiveCBR:
+
+    MDLabel:
+        text: "Software Version: alpha-3.1"
+        font_size: 18
+        pos_hint: {'x':.425,'y':-0.45}
+        #pos_hint:{"center_x":0.5, "center_y":0.1}
+
+    MDLabel:
+        text: "Author: Nicholas Comeau"
+        font_size: 18
+        pos_hint: {'x':.425,'y':-0.475}
+
+
+<ClickableTextFieldRound>:
+    size_hint_y: None
+    height: text_field.height
+
+    MDTextFieldRound:
+        id: text_field
+        hint_text: root.hint_text
+        text: root.text
+        password: True
+        color_active: app.theme_cls.primary_light
+        icon_left: "key-variant"
+        padding:
+            self._lbl_icon_left.texture_size[1] + dp(10) if self.icon_left else dp(15),                 (self.height / 2) - (self.line_height / 2),                 self._lbl_icon_right.texture_size[1] + dp(20),                 0
+
+    MDIconButton:
+        icon: "eye-off"
+        ripple_scale: .5
+        pos_hint: {"center_y": .5}
+        pos: text_field.width - self.width + dp(8), 0
+        on_release:
+            self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+            text_field.password = False if text_field.password is True else True
+
+<ContentNavigationDrawer>:
+    orientation: "vertical"
+    padding: "8dp"
+    spacing: "8dp"
+
+    AnchorLayout:
+        anchor_x: "left"
+        size_hint_y: None
+        height: avatar.height/5
+
+        Image:
+            id: avatar
+            size_hint: None, None
+            size: "175dp", "200dp"
+            source: "pages/cb_banner.png"
+    ScrollView:
+
+        MDList:
+            id: container
+            #row_default_height: 125
+
+            #ThreeLineIconListItem:
+            OneLineListItem:
+                text: ""
+
+            OneLineIconListItem:
+                text: "Home"
+                #font_style: "H4"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    app.root.current = "home"
+                IconLeftWidget:
+                    icon: "home"
+                    #user_font_size: "40dp"
+
+            OneLineIconListItem:
+                text: "Threat Intel Manager"
+                #font_style: "H4"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    app.root.current = "feeds"
+                IconLeftWidget:
+                    icon: "folder-edit-outline"
+                    #user_font_size: "40dp"
+
+            OneLineIconListItem:
+                text: "Watchlist Manager"
+                #font_style: "H4"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    app.root.current = "watchlists"
+                IconLeftWidget:
+                    icon: "monitor-eye"
+                    #icon: "alert-outline"
+                    #user_font_size: "40dp"
+
+            OneLineIconListItem:
+                text: "Sign Out"
+                #font_style: "H4"
+                on_press:
+                    root.nav_drawer.set_state("close")
+                    app.root.current = "login"
+                IconLeftWidget:
+                    icon: "logout"
+                    #icon: "alert-outline"
+                    #user_font_size: "40dp"
+            OneLineListItem:
+                text: ""
+
+<ActiveCBR>:
+    size_hint_y: None
+    height: list_item.height
+
+    OneLineListItem:
+        id: list_item
+        text: "Enable CBR Query Converter"
+        font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+
+        MDSwitch:
+            pos_hint: {'center_x': .8, 'center_y': .5}
+            on_active:
+                app.on_checkbox_active(*args)

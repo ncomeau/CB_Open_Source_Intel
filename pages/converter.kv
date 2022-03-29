@@ -1,0 +1,209 @@
+<Converter>
+    name: "converter"
+    on_enter:
+        root.initWindow()
+        root.initNav()
+    on_leave:
+        root.cleanup()
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "top"
+        MDToolbar:
+            id: toolbar
+            title: "CB Open Source Intel - CBR Converter"
+            anchor_title: "center"
+            left_action_items: [["menu", lambda x: root.basic_nav.ids.nav_drawer.set_state("open")]]
+
+
+
+    FloatLayout:
+        MDTabs:
+            pos_hint:{"center_x":0.5,"top":(0.995-toolbar.height/root.height)}
+            #pos_hint:{"center_x":0.5,"top":0.89}
+
+            id: tabs
+            tab_hint_x: True
+            allow_stretch: True
+
+            Tab:
+                id: new
+                text: "Create New WL"
+
+                MDTextField:
+                    id: new_wl
+                    required: True
+                    pos_hint: {'center_x': .5, 'center_y': .9}
+                    size_hint_x: None
+                    width: "400dp"
+                    hint_text: "Input Watchlist Name"
+                    on_focus: if self.focus: root.menu.open()
+
+                MDTextField:
+                    id: new_name
+                    required: True
+                    mode: "rectangle"
+                    pos_hint: {'center_x': .2, 'center_y': .75}
+                    size_hint_x: None
+                    width: "200dp"
+                    hint_text: "Input Report Name"
+
+                MDTextField:
+                    id: new_description
+                    mode: "rectangle"
+                    multiline: True
+                    pos_hint: {'center_x': .65, 'center_y': .75}
+                    size_hint_x: None
+                    size_hint_y: None
+                    width: "400dp"
+                    hint_text: "(Optional) Input Report Description"
+
+                MDTextField:
+                    id: new_query
+                    required: True
+                    multiline: True
+                    mode: "fill"
+                    pos_hint: {'center_x': .5, 'center_y': .5}
+                    size_hint_x: None
+                    size_hint_y: 0.2
+                    width: "700dp"
+                    hint_text: "Input CBR Query to Convert"
+
+                Label:
+                    pos_hint:{"center_x":0.2,"center_y":0.35}
+                    color: 0,0,0,1
+                    text: "Report Severity:"
+
+                MDRectangleFlatButton:
+                    id: new_severity
+                    pos_hint:{"center_x":0.35,"center_y":0.35}
+                    #font_size: "75sp"
+                    text: "5"
+                    theme_text_color: "Custom"
+                    text_color: 1, 0, 0, 1
+                    line_color: 0, 0, 1, 1
+
+                MDIconButton:
+                    pos_hint:{"center_x":0.4,"center_y":0.35}
+                    icon: "plus"
+                    on_press:
+                        root.add_new_alert_severity()
+
+                MDIconButton:
+                    pos_hint:{"center_x":0.3,"center_y":0.35}
+                    icon: "minus"
+                    on_press:
+                        root.minus_new_alert_severity()
+
+                Label:
+                    pos_hint:{"center_x":0.65,"center_y":0.35}
+                    color: 0,0,0,1
+                    text: "Enable Alerting:"
+
+                MDSwitch:
+                    id: alert_toggle
+                    pos_hint: {'center_x': .75, 'center_y': .35}
+                    on_active:
+                        root.enable_alerting(*args)
+
+                MDFillRoundFlatButton:
+                    pos_hint:{"center_x":0.5,"center_y":0.2}
+                    size_hint: 0.5, 0.1
+                    font_size: 40
+                    text: "Convert Query"
+                    color: (0,0,0,1)
+                    #icon: "database-arrow-up-outline"
+                    background_normal: ''
+                    background_color: (17/255,198/255,1,1)
+                    on_release:
+                        root.add_wl()
+
+
+            Tab:
+                id: add
+                text: "Add Report+IOC To Existing WL"
+
+                MDTextField:
+                    id: menu
+                    pos_hint: {'center_x': .5, 'center_y': .9}
+                    size_hint_x: None
+                    width: "400dp"
+                    hint_text: "Select Watchlist"
+                    on_focus: if self.focus: root.menu.open()
+
+                MDTextField:
+                    id: name
+                    required: True
+                    mode: "rectangle"
+                    pos_hint: {'center_x': .2, 'center_y': .75}
+                    size_hint_x: None
+                    width: "200dp"
+                    hint_text: "Input Report Name"
+
+                MDTextField:
+                    id: description
+                    mode: "rectangle"
+                    multiline: True
+                    pos_hint: {'center_x': .65, 'center_y': .75}
+                    size_hint_x: None
+                    size_hint_y: None
+                    width: "400dp"
+                    hint_text: "(Optional) Input Report Description"
+
+                MDTextField:
+                    id: query
+                    required: True
+                    multiline: True
+                    mode: "fill"
+                    pos_hint: {'center_x': .5, 'center_y': .5}
+                    size_hint_x: None
+                    size_hint_y: 0.2
+                    width: "700dp"
+                    hint_text: "Input CBR Query to Convert"
+
+                Label:
+                    pos_hint:{"center_x":0.4,"center_y":0.35}
+                    color: 0,0,0,1
+                    text: "Report Severity:"
+
+                MDRectangleFlatButton:
+                    id: severity
+                    pos_hint:{"center_x":0.55,"center_y":0.35}
+                    #font_size: "75sp"
+                    text: "5"
+                    theme_text_color: "Custom"
+                    text_color: 1, 0, 0, 1
+                    line_color: 0, 0, 1, 1
+
+                MDIconButton:
+                    pos_hint:{"center_x":0.6,"center_y":0.35}
+                    icon: "plus"
+                    on_press:
+                        root.add_alert_severity()
+
+
+                MDIconButton:
+                    pos_hint:{"center_x":0.5,"center_y":0.35}
+                    icon: "minus"
+                    on_press:
+                        root.minus_alert_severity()
+
+                MDFillRoundFlatButton:
+                    pos_hint:{"center_x":0.5,"center_y":0.2}
+                    size_hint: 0.5, 0.1
+                    font_size: 40
+                    text: "Convert Query"
+                    color: (0,0,0,1)
+                    #icon: "database-arrow-up-outline"
+                    background_normal: ''
+                    background_color: (17/255,198/255,1,1)
+                    on_release:
+                        root.add_report()
+
+
+
+
+<Item>
+
+    IconLeftWidget:
+        icon: root.left_icon

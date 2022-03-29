@@ -1,0 +1,691 @@
+{
+    "feedinfo": {
+        "name": "malsilo_domain",
+        "owner": "malsilo",
+        "provider_url": "https://malsilo.gitlab.io/",
+        "summary": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains domains that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+        "category": "Open Source"
+    },
+    "reports": [
+        {
+            "id": "malsilo_domain_0",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "emotet"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_0",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:fakeread.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_1",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "emotet"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_1",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:nuhatoys.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_2",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "agenttesla"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_2",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:odin.mk-host.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_3",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "formbook"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_3",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:webuyhousestitletown.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_4",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "agenttesla"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_4",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:wwwdisneyresortmetaverse.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_5",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "andromeda"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_5",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:guy.rest"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_6",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "agenttesla"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_6",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:padison8t.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_7",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "formbook"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_7",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:dulleropora.quest"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_8",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "formbook"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_8",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:quantumskillset.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_9",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "coinminer"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_9",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:8.tcp.ngrok.io"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_10",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "emotet"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_10",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:inorte.com.br"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_11",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "maldoc"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_11",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:duocphamct.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_12",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "coinminer"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_12",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:unic11m.top"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_13",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_13",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:unic12e.top"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_14",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_14",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:unic11e.top"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_15",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "agenttesla"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_15",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:molerreneta.xyz"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_16",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_16",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:rcacademy.at"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_17",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "krbanker"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_17",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:haohm.502ok.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_18",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_18",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:lhznqyl.press"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_19",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "downloader"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_19",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:singsamut.ac.th"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_20",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "emotet"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_20",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:luoicauthang.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_21",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "lokibot"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_21",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:secure01-redirect.net"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_22",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_22",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:witra.ru"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_23",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "jaik"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_23",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:yabynennet.xyz"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_24",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_24",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:mstdn.social"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_25",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "agenttesla"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_25",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:godisgood1.hopto.org"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_26",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "sabsik"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_26",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:noc.social"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_27",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "smokeloader"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_27",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:phocea-sudan.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_28",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "formbook"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_28",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:ncvwgj.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_29",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_29",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:file-file-host4.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_30",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "unknown"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_30",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:volc.ddns.net"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_31",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "azorult"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_31",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:morjey01.top"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_32",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "adware"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_32",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:neofunkyjunky.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "malsilo_domain_33",
+            "timestamp": 1647883416,
+            "tags": [
+                "malsilo_domain",
+                "emotet"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Malsilo is an open source threat intel feed used in a variety of threat intel platforms. The following feed contains ips (v4) and their associated ports that have been observed in correlation with known attacks. These attacks can be found in the 'tags' section of the report.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "malsilo_domain_33",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_domain:getwayimmigration.com"
+                    ]
+                }
+            ]
+        }
+    ]
+}

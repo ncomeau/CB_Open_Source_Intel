@@ -1,0 +1,953 @@
+{
+    "feedinfo": {
+        "id": "SE_Query_Feed_v2",
+        "name": "SE_Query_Feed_v2",
+        "owner": "SE_test_org",
+        "provider_url": "https://github.com/carbonblack/community",
+        "summary": "This feed is a collection of custom search queries from the Carbon Black SE Team",
+        "category": "SE Internal - Rob Eberhardt",
+        "access": "private"
+    },
+    "reports": [
+{
+            "id": "SEQuery_report_1",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "User account activity via command line",
+            "description": "Detected User account activity via command line",
+            "severity": 5,
+            "tags": [
+                "Net User"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_user_acct_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:net.exe AND process_cmdline:\"net user\""
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_2",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Attempts to add users on a system",
+            "description": "Detected an attempt to add users on a system",
+            "severity": 5,
+             "tags": [
+                "Net User"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_system_user_add_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_cmdline:\"net\" OR process_cmdline:\"user\" OR process_cmdline:\"/add\""
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_3",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Attempts to add users to a localgroup",
+            "description": "Detected an attempt to add users to a localgroup",
+            "severity": 5,
+            "tags": [
+                "Net User Add",
+                "localgroup"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_localgroup_user_add_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_cmdline:\"net\" OR process_cmdline:\"localgroup\" OR process_cmdline:\"cmdline:/add\""
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_4",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Unsigned binaries making network connections",
+            "description": "Detected Unsigned binaries making network connections",
+            "severity": 5,
+            "tags": [
+                "Unsigned Binary",
+                "netconn",
+                "NOT_LISTED"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unsigned_binary_with_netconn_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_reputation:NOT_LISTED AND netconn_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_5",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Unsigned binaries calling svchost",
+            "description": "Detected Unsigned binaries calling svchost",
+            "severity": 5,
+            "tags": [
+                "NOT_LISTED",
+                "Unsigned Binary",
+                "svchost.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_Unsigned_binary_calling_svchost_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_reputation:NOT_LISTED AND childproc_name:svchost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_6",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Known Malicious Binaries Making Network Connections", 
+            "description": "Detected Malicious Binaries Making Network Connections",
+            "severity": 5,
+            "tags": [
+                "Malicious",
+                "netconn"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_malicious_binary_with_netconn_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_reputation:KNOWN_MALWARE AND netconn_count:[1 TO  *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_7",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Browsers running a process that spawns a command shell", 
+            "description": "Detected Browsers running a process that spawns a command shell",
+            "severity": 5,
+            "tags": [
+                "Browser",
+                "command shell"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_browser_with_cmd_spawn_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "childproc_name:cmd.exe AND (parent_name:iexplore.exe OR parent_name:firefox.exe OR parent_name:chrome.exe OR parent_name:acrord32.exe OR parent_name:java.exe OR parent_name:javaw.exe OR parent_name: *flash)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_8",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Processes that should never spawn a child process", 
+            "description": "Detected Processes that should never spawn a child process",
+            "severity": 5,
+            "tags": [
+                "notepad.exe",
+                "unexpected childproc"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_process_with_bad_childproc_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:notepad.exe AND childproc_count:[1 TO  *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+
+{
+            "id": "SEQuery_report_10",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Odd Reg Edit spawns", 
+            "description": "Detected Odd Reg Edit spawns",
+            "severity": 5,
+            "tags": [
+                "regedit",
+                "regedt32"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_odd_reg_edit_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "NOT process_name:explorer.exe AND (childproc_name:regedit.exe OR childproc_name:regedt32.exe)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_11",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Detects items attempting to execute in the appdata directory - option 1 ", 
+            "description": "Detected attempt to execute in the appdata directory",
+            "severity": 5,
+            "tags": [
+                "NOT_LISTED",
+                "appdata"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_appdata_execution_1_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:appdata*exe AND process_reputation:NOT_LISTED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_12",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Detects items attempting to execute in the appdata directory - option 2", 
+            "description": "Detected attempt to execute in the appdata directory",
+            "severity": 5,
+            "tags": [
+                "appdata",
+                "temp",
+                "local"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_appdata_execution_2_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_name:appdata\\local\\temp\\**"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_13",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Execution from Temp", 
+            "description": "Detected Execution from Temp",
+            "severity": 5,
+            "tags": [
+                "temp",
+                "NOT_LISTED"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_temp_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:temp*exe AND process_reputation:NOT_LISTED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_14",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Acrobat spawns unsigned file", 
+            "description": "Detected Acrobat spawns unsigned file",
+            "severity": 5,
+            "tags": [
+                "Acrobat",
+                "NOT_LISTED"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_acrobat_spawning_unsigned_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:acrord32.exe AND process_reputation:NOT_LISTED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_15",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "RDP sessions",
+            "description": "Detected RDP Sessions",
+            "severity": 5,
+            "tags": [
+                "Net User Add",
+                "localgroup"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_rdp_sessions_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:mstsc.exe netconn_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_16",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Most recent IE 0-day attack pattern", 
+            "description": "Detected IE 0-day attack",
+            "severity": 5,
+            "tags": [
+                "iexplore",
+                "0day"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_ie_0day_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "modload_name:vgx.dll AND process_name:iexplore.exe AND modload_name:*.ocx AND childproc_name:*.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_17",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Excessive File Modifications", 
+            "description": "Detected Excessive File Modifications",
+            "severity": 5,
+            "tags": [
+                "excessive file mods"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_excessive_filemods_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_count:[500 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_18",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "AT Scheduled Jobs", 
+            "description": "Detected AT Scheduled Jobs",
+            "severity": 5,
+            "tags": [
+                "AT",
+                "Scheduled Tasks"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_at_scheduled_jobs_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:at.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_19",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "nmap execution", 
+            "description": "Detected nmap execution",
+            "severity": 5,
+            "tags": [
+                "nmap",
+                "nmap.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_nmap_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:nmap.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_20",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Wireshark execution", 
+            "description": "Detected Wireshark execution",
+            "severity": 5,
+            "tags": [
+                "wireshark",
+                "wireshark.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_wireshark_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:wireshark.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_21",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Robocopy execution", 
+            "description": "Detected Robocopy execution",
+            "severity": 5,
+            "tags": [
+                "robocopy",
+                "robocopy.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_robocopy_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:robocopy.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_22",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Sysinternals files running", 
+            "description": "Detected Sysinternals Tools",
+            "severity": 5,
+            "tags": [
+                "Sysinternals"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_sysinternals_tools_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_file_description:Sysinternals OR process_product_name:Sysinternals"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_23",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Torrent programs running", 
+            "description": "Detected Torrent program running",
+            "severity": 5,
+            "tags": [
+                "Torrent"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_torrent_program_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_file_description:*torrent* OR process_product_name:BitTorrent"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_24",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Command Shell Writing out an EXE", 
+            "description": "Detected Command Shell Writing out an EXE",
+            "severity": 5,
+            "tags": [
+                "cmd.exe",
+                "command line",
+                "exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_command_shell_writing_exe_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:cmd.exe AND filemod_name:*.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_25",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "powershell launched with the Invoke-Expression argument",
+            "description": "Detected powershell launched with the Invoke-Expression argument",
+            "severity": 5,
+            "tags": [
+                "powershell",
+                "iex",
+                "invoke-expression"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_powershell_iex_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND process_cmdline:iex"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_26",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "rundll32.exe launched with javascript", 
+            "description": "Detected rundll32.exe launched with javascript",
+            "severity": 5,
+            "tags": [
+                "rundll32",
+                "rundll32.exe",
+                "javascript"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_rundll32_with_js_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:rundll32.exe AND process_cmdline:javascript*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_27",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "rundll32 launching powershell", 
+            "description": "Detected rundll32 launching powershell",
+            "severity": 5,
+            "tags": [
+                "powershell",
+                "powershell.exe",
+                "rundll32",
+                "rundll32.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_rundll32_with_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe parent_name:rundll32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_28",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "powershell launching dllhost", 
+            "description": "Detected powershell launching dllhost",
+            "severity": 5,
+            "tags": [
+                "powershell",
+                "powershell.exe",
+                "dllhost",
+                "dllhost.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_powershell_with_dllhost_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND childproc_name:dllhost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_29",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "exe running directly from appdata local directory", 
+            "description": "Detected exe running directly from appdata local directory",
+            "severity": 5,
+            "tags": [
+                "appdata",
+                "local"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_exe_from_appdata_local_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_name:c\\:\\\\users\\\\*\\\\appdata\\\\local\\\\*.exe AND NOT process_name:c\\:\\\\users\\\\*\\\\appdata\\\\local\\\\*"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_30",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Temp execution with high netconns", 
+            "description": "Detected Temp execution with high netconns",
+            "severity": 5,
+            "tags": [
+                "temp",
+                "netconn"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_temp_execution_high_netconns_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_name:c\\:\\\\users\\\\*\\\\appdata\\\\local\\\\temp\\\\*.exe AND netconn_count:[50 TO *]"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_31",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Execution from root of windows with services.exe parent",
+            "description": "Detected Execution from root of windows with services.exe parent",
+            "severity": 5,
+            "tags": [
+                "services.exe",
+                "Windows folder"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_execution_from_windows_with_services_exe_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "parent_name:services.exe AND process_name:c\\:\\\\windows\\\\*.exe AND NOT process_name:c\\:\\\\windows\\\\system32\\\\** AND NOT process_name:c\\:\\\\windows\\\\syswow64\\\\**"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_32",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "msiexec should run from windows folder and not a subdirectory ", 
+            "description": "Detected msiexec not from windows folder",
+            "severity": 5,
+            "tags": [
+                "msiexec",
+                "msiexec.exe",
+                "Windows folder"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_msiexec_not_windows_folder_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_name:c\\:\\\\windows\\\\installer\\\\**\\\\msiexec.exe"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_33",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Explorer or cmd parent of executable running in temp, with common FPs negated", 
+            "description": "Detected explorer or cmd parent running in temp",
+            "severity": 5,
+            "tags": [
+                "explorer.exe",
+                "cmd.exe",
+                "cmd",
+                "temp"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_explorer_cmd_parent_in_temp_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "(parent_name:explorer.exe OR parent_name:cmd.exe) AND process_name:c\\:\\\\users\\\\*\\\\appdata\\\\local\\\\temp\\\\*.exe AND NOT (process_name:spinner.exe OR process_name:sqltool.exe OR process_name:serversetupcheck.exe OR process_name:googledrivesync.exe OR process_name:setup.exe)"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_34",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Services.exe with unexpected childproc", 
+            "description": "Detected Services.exe with unexpected childproc",
+            "severity": 5,
+            "tags": [
+                "services.exe",
+                "unexpected childproc"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_services_with_unexpected_childproc_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "parent_name:services.exe AND process_name:c\\:\\\\windows\\\\*.exe AND NOT (process_name:c\\:\\\\windows\\\\system32\\\\* OR process_name:c\\:\\\\windows\\\\syswow64\\\\*)"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_35",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Unexpected execution directly from Windows root",
+            "description": "Detected Unexpected execution directly from Windows root",
+            "severity": 5,
+            "tags": [
+                "unexpected execution",
+                "Windows folder"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unexpected_execution_from_windows_ioc",
+                    "match_type": "query",
+                    "field": "123",
+                    "values": [
+                            "process_name:c\\:\\\\windows\\\\*.exe AND NOT (process_name:c\\:\\\\windows\\\\* OR process_name:explorer.exe OR process_name:regedit.exe OR process_name:splwow64.exe)"
+                    ],
+                    "link": "https://github.com/carbonblack/community"
+                }
+            ]
+        },
+
+{
+            "id": "SEQuery_report_36",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Boot Config Data", 
+            "description": "Detected Boot Config Data execution",
+            "severity": 5,
+            "tags": [
+                "bcdedit",
+                "bcdboot"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_bcd_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:bcdedit OR process_name:bcdboot"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_37",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Windows Events Command Line Utility", 
+            "description": "Detected Windows Events Command Line Utility",
+            "severity": 5,
+            "tags": [
+                "wevtutil",
+                "wevtutil.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_wexvtutil_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:wevtutil"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_38",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Poweliks - Rundll32 using JS",
+            "description": "Detected Poweliks - Rundll32 using JS",
+            "severity": 5,
+            "tags": [
+                "poweliks",
+                "rundll32",
+                "javascript"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_poweliks_rundll32_js_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:rundll32.exe AND process_cmdline:\"mshtml,runhtmlapplication\""
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_39",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Poweliks -  PS run by Rundll32",
+            "description": "Detected Poweliks -  PS run by Rundll32",
+            "severity": 5,
+            "tags": [
+                "poweliks",
+                "powershell",
+                "powershell.exe",
+                "rundll32",
+                "rundll32.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_poweliks_ps_by_rundll32_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND parent_name:rundll32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_40",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Poweliks -  DLLHost run by PS", 
+            "description": "Detected Poweliks -  DLLHost run by PS",
+            "severity": 5,
+            "tags": [
+                "poweliks",
+                "powershell",
+                "powershell.exe",
+                "dllhost",
+                "dllhost.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_poweliks_dllhost_by_PS_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND childproc_name:dllhost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "SEQuery_report_41",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Odd command shell spawn", 
+            "description": "Detected Odd command shell spawn",
+            "severity": 5,
+            "tags": [
+                "cmd.exe",
+                "command shell",
+                "interpreter",
+                "browser"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_odd_cmd_shell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:cmd.exe AND (parent_name:iexplore.exe OR parent_name:firefox.exe OR parent_name:chrome.exe OR parent_name:acrord32.exe OR parent_name:java.exe OR parent_name:javaw.exe OR parent_name:*flash*)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,248 @@
+<Feeds>
+    name: "feeds"
+    on_enter:
+        root.initWindow()
+        root.initNav()
+        root.basic_nav.ids.nav_drawer.set_state("close")
+    on_leave:
+        root.ids.container.clear_widgets()
+
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "top"
+        MDToolbar:
+            id: toolbar
+            title: "CB Open Source Intel - Threat Feeds"
+            anchor_title: "center"
+            left_action_items: [["menu", lambda x: root.basic_nav.ids.nav_drawer.set_state("open")]]
+
+    FloatLayout:
+        MDTabs:
+            pos_hint:{"center_x":0.5,"top":(0.995-toolbar.height/root.height)}
+            #pos_hint:{"center_x":0.5,"top":0.89}
+
+            id: tabs
+            tab_hint_x: True
+            allow_stretch: True
+            on_tab_switch:
+                root.on_tab_switch(*args)
+
+
+            Tab:
+                id: existing
+                text: "Existing Threat Intel"
+
+                ScrollView:
+                    MDList:
+                        id: container
+
+
+            Tab:
+                id: available
+                text: "Available Threat Intel"
+                ScrollView:
+                    MDList:
+                        id: avail_container
+
+
+######### MDLIST ITEMS TO BE ADDED BASED ON BUTTON ACTION #############
+
+### IMPORT BUTTONS ###
+<ImportBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(160), 0
+            on_release:
+                app.feeds.get_info_file(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Import"
+            md_bg_color: 0, 0.7, 0, 0.5
+
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(80), 0
+            on_release:
+                app.feeds.import_feed(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+<ImportCreditBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+            on_press:
+                root.props(root.icon)
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(160), 0
+            on_release:
+                app.feeds.get_info_file(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Import"
+            md_bg_color: 0, 0.7, 0, 0.5
+
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(80), 0
+            on_release:
+                app.feeds.import_feed(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+### MANAGE FEEDS BUTTONS ###
+
+<GetInfoBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(70), 0
+            on_release:
+                app.feeds.get_info(self.parent.ids._lbl_secondary.text)
+
+<InfoUpdateDeleteBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(215), 0
+            on_release:
+                app.feeds.get_info(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Update"
+            md_bg_color: 0, 0.7, 0, 0.5
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(140), 0
+            on_release:
+                app.feeds.update_feed(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+        MDFillRoundFlatButton:
+            text: "Delete"
+            md_bg_color: 0.7, 0, 0.3, 0.5
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(70), 0
+            on_release:
+                app.feeds.delete_confirm(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+<InfoDeleteBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(140), 0
+            on_release:
+                app.feeds.get_info(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Delete"
+            md_bg_color: 0.7, 0, 0.3, 0.5
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(70), 0
+            on_release:
+                app.feeds.delete_confirm(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+<InfoDeleteCreditBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+            on_press:
+                root.props(root.icon)
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            #icon: "eye-off"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(140), 0
+            on_release:
+                app.feeds.get_info(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Delete"
+            md_bg_color: 0.7, 0, 0.3, 0.5
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(70), 0
+            on_release:
+                app.feeds.delete_confirm(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+<Tab>:
+

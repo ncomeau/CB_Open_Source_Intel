@@ -1,0 +1,1797 @@
+{
+    "feedinfo": {
+        "name": "ipsum_level7",
+        "owner": "ipsum",
+        "provider_url": "https://github.com/stamparm/ipsum",
+        "summary": "NO REPORTED FP\n\nIPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+        "category": "Open Source"
+    },
+    "reports": [
+        {
+            "id": "ipsum_level7_0",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_0",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:116.105.212.31"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_1",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_1",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:171.25.193.77"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_2",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_2",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:171.25.193.78"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_3",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_3",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.67.34.253"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_4",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_4",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.253"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_5",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_5",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.255"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_6",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_6",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:171.25.193.25"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_7",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_7",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.67.34.100"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_8",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_8",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:122.194.229.38"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_9",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_9",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:162.247.74.206"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_10",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_10",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:89.234.157.254"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_11",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_11",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:112.85.42.124"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_12",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_12",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.254"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_13",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_13",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:116.105.216.128"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_14",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_14",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.102.4"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_15",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_15",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.102.8"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_16",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_16",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:179.43.168.126"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_17",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_17",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.140"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_18",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_18",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:116.110.3.253"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_19",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_19",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:80.67.172.162"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_20",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_20",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:194.165.16.5"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_21",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_21",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.56.80.65"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_22",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_22",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.133"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_23",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_23",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.240"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_24",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_24",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:134.209.199.124"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_25",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_25",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.34.33.2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_26",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_26",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:37.123.163.58"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_27",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_27",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:2.56.57.187"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_28",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_28",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:179.43.187.173"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_29",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_29",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:218.92.0.221"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_30",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_30",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:122.194.229.37"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_31",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_31",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:107.189.10.237"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_32",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_32",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.250"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_33",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_33",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.117.215.9"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_34",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_34",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:23.129.64.139"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_35",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_35",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:194.31.98.75"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_36",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_36",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:107.189.8.219"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_37",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_37",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:112.85.42.15"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_38",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_38",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:5.2.69.50"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_39",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_39",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.101.4"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_40",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_40",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.101.1"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_41",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_41",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_42",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_42",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.154.255.147"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_43",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_43",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.101.41"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_44",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_44",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.100.87.72"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_45",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_45",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:112.85.42.128"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_46",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_46",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:164.92.154.128"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_47",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_47",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:81.17.18.62"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_48",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_48",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:91.149.225.172"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_49",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_49",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:23.129.64.250"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_50",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_50",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.129"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_51",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_51",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:61.177.172.89"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_52",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_52",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.252"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_53",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_53",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.15.16.105"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_54",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_54",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.165.168.229"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_55",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_55",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.129.56.200"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_56",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_56",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:192.42.116.19"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_57",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_57",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:166.70.207.2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_58",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_58",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:209.141.45.189"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_59",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_59",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:46.19.139.18"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_60",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_60",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:61.177.172.154"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_61",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_61",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:23.129.64.146"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_62",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_62",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:122.194.229.40"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_63",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_63",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:107.189.5.249"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_64",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_64",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:144.22.251.63"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_65",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_65",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:171.25.193.20"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_66",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_66",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:120.224.50.233"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_67",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_67",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.107.47.215"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_68",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_68",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:162.247.74.7"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_69",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_69",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:136.144.41.227"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_70",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_70",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:64.113.32.29"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_71",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_71",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:146.59.233.33"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_72",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_72",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:205.185.123.37"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_73",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_73",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:199.195.250.77"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_74",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_74",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:198.98.59.108"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_75",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_75",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:62.102.148.69"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_76",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_76",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:107.189.13.116"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_77",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_77",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:104.244.76.13"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_78",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_78",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:194.31.98.246"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_79",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_79",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.129.62.62"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_80",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_80",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.131"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_81",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_81",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.130"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_82",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_82",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.137"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_83",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_83",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.139"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_84",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_84",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:61.177.172.92"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_85",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_85",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.242"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_86",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_86",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:162.247.72.199"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_87",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_87",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.153.160.132"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_88",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_88",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:104.244.72.135"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_89",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_89",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:122.194.229.54"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_90",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_90",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.220.100.247"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_91",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_91",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:107.189.13.173"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_92",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_92",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:112.85.42.73"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ipsum_level7_93",
+            "timestamp": 1647883405,
+            "tags": [
+                "ipsum_level7"
+            ],
+            "title": "Level 7 - NO REPORTED False Positives",
+            "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "ipsum_level7_93",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:112.85.42.74"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,473 @@
+{
+    "feedinfo": {
+        "name": "Fuzzy_Search_Queries",
+        "owner": "Nicholas Comeau",
+        "provider_url": "https://github.com/ncomeau",
+        "summary": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+        "category": "Nicholas Comeau-Jacob Barosin-Kirk Hasty"
+    },
+    "reports": [
+        {
+            "id": "fuzzy_search_0",
+            "timestamp": 1645820109,
+            "tags": [
+                "powershell.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "powershell.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_0",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe~1 AND NOT process_name:powershell.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_1",
+            "timestamp": 1645820109,
+            "tags": [
+                "lsass.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "lsass.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 10,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_1",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:lsass.exe~1 AND NOT process_name:lsass.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_2",
+            "timestamp": 1645820109,
+            "tags": [
+                "svchost.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "svchost.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_2",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:svchost.exe~1 AND NOT process_name:svchost.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_3",
+            "timestamp": 1645820109,
+            "tags": [
+                "csrss.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "csrss.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_3",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:csrss.exe~1 AND NOT process_name:csrss.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_4",
+            "timestamp": 1645820109,
+            "tags": [
+                "smss.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "smss.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_4",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:smss.exe~1 AND NOT process_name:smss.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_5",
+            "timestamp": 1645820109,
+            "tags": [
+                "explorer.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "explorer.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_5",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:explorer.exe~1 AND NOT process_name:explorer.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_6",
+            "timestamp": 1645820109,
+            "tags": [
+                "wininit.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "wininit.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_6",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:wininit.exe~1 AND NOT process_name:wininit.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_7",
+            "timestamp": 1645820109,
+            "tags": [
+                "chrome.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "chrome.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_7",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:chrome.exe~1 AND NOT process_name:chrome.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_8",
+            "timestamp": 1645820109,
+            "tags": [
+                "services.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "services.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_8",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:services.exe~1 AND NOT process_name:services.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_9",
+            "timestamp": 1645820109,
+            "tags": [
+                "winlogin.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "winlogin.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_9",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:winlogin.exe~1 AND NOT process_name:winlogin.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_10",
+            "timestamp": 1645820109,
+            "tags": [
+                "cmd.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "cmd.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_10",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:cmd.exe~1 AND NOT process_name:cmd.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_11",
+            "timestamp": 1645820109,
+            "tags": [
+                "mshta.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "mshta.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_11",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:mshta.exe~1 AND NOT process_name:mshta.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_12",
+            "timestamp": 1645820109,
+            "tags": [
+                "rundll32.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "rundll32.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_12",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:rundll32.exe~1 AND NOT process_name:rundll32.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_13",
+            "timestamp": 1645820109,
+            "tags": [
+                "dllhost.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "dllhost.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_13",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:dllhost.exe~1 AND NOT process_name:dllhost.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_14",
+            "timestamp": 1645820109,
+            "tags": [
+                "regedit.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "regedit.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_14",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:regedit.exe~1 AND NOT process_name:regedit.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_15",
+            "timestamp": 1645820109,
+            "tags": [
+                "regedt32.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "regedt32.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_15",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:regedt32.exe~1 AND NOT process_name:regedt32.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_16",
+            "timestamp": 1645820109,
+            "tags": [
+                "reg.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "reg.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_16",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:reg.exe~1 AND NOT process_name:reg.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_17",
+            "timestamp": 1645820109,
+            "tags": [
+                "certutil.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "certutil.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_17",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:certutil.exe~1 AND NOT process_name:certutil.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_18",
+            "timestamp": 1645820109,
+            "tags": [
+                "net.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "net.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_18",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:net.exe~1 AND NOT process_name:net.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_19",
+            "timestamp": 1645820109,
+            "tags": [
+                "winword.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "winword.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_19",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:winword.exe~1 AND NOT process_name:winword.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_20",
+            "timestamp": 1645820109,
+            "tags": [
+                "excel.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "excel.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_20",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:excel.exe~1 AND NOT process_name:excel.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fuzzy_search_21",
+            "timestamp": 1645820109,
+            "tags": [
+                "powerpnt.exe",
+                "fuzzy",
+                "masquerading"
+            ],
+            "title": "powerpnt.exe potential masquerading",
+            "description": "This feed contains curated queries looking for potential masquerading, through leveraging Carbon Black's Fuzzy Searching capability to look for common applications where the name differs by 1 character from the expected name.\n\nThis feed was created with contributions from Nicholas Comeau, Jacob Barosin, and Kirk Hasty.\n\nFP rate should be minimal, but could vary based on envrionment.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "fuzzy_search_21",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powerpnt.exe~1 AND NOT process_name:powerpnt.exe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

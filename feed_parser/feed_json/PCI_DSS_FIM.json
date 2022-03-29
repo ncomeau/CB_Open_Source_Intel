@@ -1,0 +1,2521 @@
+{
+    "feedinfo": {
+        "id": "PCI_DSS_FIM",
+        "name": "PCI_DSS_FIM",
+        "owner": "PCI_DSS_Windows_Examples",
+        "provider_url": "https://github.com/carbonblack/community",
+        "summary": "This feed is a collection of critical Windows files that should be monitored for modification under PCI DSS requirement 11.5.  Please note that this feed is not provided by Carbon Black, and is simply a starting point for monitoring Windows file modifications per the PCI DSS spec.  Please consult with your QSA for potential exclusions or additions.",
+        "category": "PCI DSS Internal Test - Rob Eberhardt",
+        "access": "private"
+    },
+    "reports": [
+{
+            "id": "PCI_FIM_Windows_report_1",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - autoexec.bat",
+            "description": "Detected PCI DSS File Modification - autoexec.bat",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_1",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\autoexec.bat"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_2",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - boot.ini",
+            "description": "Detected PCI DSS File Modification - boot.ini",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_2",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\boot.ini"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_3",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - msdos.sys",
+            "description": "Detected PCI DSS File Modification - msdos.sys",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_3",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\msdos.sys"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_4",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - explorer.exe",
+            "description": "Detected PCI DSS File Modification - explorer.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_4",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\windows\\\\explorer.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_5",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - poledit.exe",
+            "description": "Detected PCI DSS File Modification - poledit.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_5",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\poledit.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_6",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - regedit.exe",
+            "description": "Detected PCI DSS File Modification - regedit.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_6",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\regedit.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_7",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - system.ini",
+            "description": "Detected PCI DSS File Modification - system.ini",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_7",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system.ini"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_8",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - autoexec.nt",
+            "description": "Detected PCI DSS File Modification - autoexec.nt",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_8",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\autoexec.nt"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_9",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - bootvrfy.exe",
+            "description": "Detected PCI DSS File Modification - bootvrfy.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_9",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\bootvrfy.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_10",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - calc.exe",
+            "description": "Detected PCI DSS File Modification - calc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_10",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\calc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_11",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - cdplayer.exe",
+            "description": "Detected PCI DSS File Modification - cdplayer.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_11",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\cdplayer.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_12",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - cipher.exe",
+            "description": "Detected PCI DSS File Modification - cipher.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_12",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\cipher.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_13",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - cmd.exe",
+            "description": "Detected PCI DSS File Modification - cmd.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_13",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\cmd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_14",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - cmdl32.exe",
+            "description": "Detected PCI DSS File Modification - cmdl32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_14",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\cmdl32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_15",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - config.nt",
+            "description": "Detected PCI DSS File Modification - config.nt",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_15",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\config.nt"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_16",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - debug.exe",
+            "description": "Detected PCI DSS File Modification - debug.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_16",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\debug.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_17",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - dllhost.exe",
+            "description": "Detected PCI DSS File Modification - dllhost.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_17",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\dllhost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_18",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - drivers/etc",
+            "description": "Detected PCI DSS File Modification - drivers/etc",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_18",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\drivers\\\\etc\\\\*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_19",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - drwatson.exe",
+            "description": "Detected PCI DSS File Modification - drwatson.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_19",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\drwatson.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_20",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - drwtsn32.exe",
+            "description": "Detected PCI DSS File Modification - drwtsn32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_20",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\drwtsn32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_21",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - eventvwr.exe",
+            "description": "Detected PCI DSS File Modification - eventvwr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_21",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\eventvwr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_22",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - eventcmd.exe",
+            "description": "Detected PCI DSS File Modification - eventcmd.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_22",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\eventcmd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_23",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - eventwin.exe",
+            "description": "Detected PCI DSS File Modification - eventwin.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_23",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\eventwin.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_24",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - find.exe",
+            "description": "Detected PCI DSS File Modification - find.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_24",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\find.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_25",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ftp.exe",
+            "description": "Detected PCI DSS File Modification - ftp.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_25",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ftp.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_26",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - help.exe",
+            "description": "Detected PCI DSS File Modification - help.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_26",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\help.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_27",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - icmp.dll",
+            "description": "Detected PCI DSS File Modification - icmp.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_27",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\icmp.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_28",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ipconfig.exe",
+            "description": "Detected PCI DSS File Modification - ipconfig.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_28",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ipconfig.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_29",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - krnl386.exe",
+            "description": "Detected PCI DSS File Modification - krnl386.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_29",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\krnl386.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_30",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - logoff.exe",
+            "description": "Detected PCI DSS File Modification - logoff.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_30",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\logoff.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_31",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - lsass.exe",
+            "description": "Detected PCI DSS File Modification - lsass.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_31",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\lsass.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_32",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - makecab.exe",
+            "description": "Detected PCI DSS File Modification - makecab.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_32",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\makecab.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_33",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - mem.exe",
+            "description": "Detected PCI DSS File Modification - mem.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_33",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\mem.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_34",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - mmc.exe",
+            "description": "Detected PCI DSS File Modification - mmc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_34",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\mmc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_35",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - mountvol.exe",
+            "description": "Detected PCI DSS File Modification - mountvol.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_35",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\mountvol.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_36",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - msiexec.exe",
+            "description": "Detected PCI DSS File Modification - msiexec.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_36",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\msiexec.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_37",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - msv1_0.dll",
+            "description": "Detected PCI DSS File Modification - msv1_0.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_37",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\msv1_0.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_38",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - nbtstat.exe",
+            "description": "Detected PCI DSS File Modification - nbtstat.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_38",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\nbtstat.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_39",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - net.exe",
+            "description": "Detected PCI DSS File Modification - net.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_39",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\net.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_40",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - netapi.dll",
+            "description": "Detected PCI DSS File Modification - netapi.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_40",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\netapi.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_41",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - netmsg.dll",
+            "description": "Detected PCI DSS File Modification - netmsg.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_41",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\netmsg.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_42",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - netstat.exe",
+            "description": "Detected PCI DSS File Modification - netstat.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_42",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\netstat.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_43",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ntbackup.exe",
+            "description": "Detected PCI DSS File Modification - ntbackup.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_43",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ntbackup.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_44",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ntdll.dll",
+            "description": "Detected PCI DSS File Modification - ntdll.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_44",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ntdll.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_45",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - os2.exe",
+            "description": "Detected PCI DSS File Modification - os2.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_45",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\os2.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_46",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - os2srv.exe",
+            "description": "Detected PCI DSS File Modification - os2srv.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_46",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\os2srv.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_47",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - perfmon.exe",
+            "description": "Detected PCI DSS File Modification - perfmon.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_47",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\perfmon.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_48",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - posix.exe",
+            "description": "Detected PCI DSS File Modification - posix.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_48",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\posix.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_49",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - recover.exe",
+            "description": "Detected PCI DSS File Modification - recover.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_49",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\recover.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_50",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - regedt32.exe",
+            "description": "Detected PCI DSS File Modification - regedt32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_50",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\regedt32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_51",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - register.exe",
+            "description": "Detected PCI DSS File Modification - register.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_51",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\register.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_52",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - regsvc.exe",
+            "description": "Detected PCI DSS File Modification - regsvc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_52",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\regsvc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_53",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - regsvr32.exe",
+            "description": "Detected PCI DSS File Modification - regsvr32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_53",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\regsvr32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_54",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification- rexec.exe",
+            "description": "Detected PCI DSS File Modification - rexec.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_54",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\rexec.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_55",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - rsh.exe",
+            "description": "Detected PCI DSS File Modification - rsh.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_55",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\rsh.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_56",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - runas.exe",
+            "description": "Detected PCI DSS File Modification - runas.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_56",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\runas.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_57",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - rundll32.exe",
+            "description": "Detected PCI DSS File Modification - rundll32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_57",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\rundll32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_58",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - runonce.exe",
+            "description": "Detected PCI DSS File Modification - runonce.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_58",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\runonce.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_59",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - secedit.exe",
+            "description": "Detected PCI DSS File Modification - secedit.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_59",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\secedit.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_60",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - services.exe",
+            "description": "Detected PCI DSS File Modification - services.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_60",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\services.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_61",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - sethc.exe",
+            "description": "Detected PCI DSS File Modification - sethc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_61",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\sethc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_62",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - setreg.exe",
+            "description": "Detected PCI DSS File Modification - setreg.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_62",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\setreg.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_63",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - sfc.exe",
+            "description": "Detected PCI DSS File Modification - sfc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_63",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\sfc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_64",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - shdocvw.dll",
+            "description": "Detected PCI DSS File Modification - shdocvw.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_64",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\shdocvw.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_65",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - shell.dll",
+            "description": "Detected PCI DSS File Modification - shell.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_65",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\shell.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_66",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - shell32.dll",
+            "description": "Detected PCI DSS File Modification - shell32.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_66",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\shell32.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_67",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - skeys.exe",
+            "description": "Detected PCI DSS File Modification - skeys.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_67",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\skeys.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_68",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - smss.exe",
+            "description": "Detected PCI DSS File Modification - smss.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_68",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\smss.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_69",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - sndrec32.exe",
+            "description": "Detected PCI DSS File Modification - sndrec32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_69",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\sndrec32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_70",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - sndvol32.exe",
+            "description": "Detected PCI DSS File Modification - sndvol32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_70",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\sndvol32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_71",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - snmp.exe",
+            "description": "Detected PCI DSS File Modification - snmp.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_71",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\snmp.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_72",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - snmptrap.exe",
+            "description": "Detected PCI DSS File Modification - snmptrap.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_72",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\snmptrap.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_73",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - spupdsvc.exe",
+            "description": "Detected PCI DSS File Modification - spupdsvc.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_73",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\spupdsvc.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_74",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - srvmgr.exe",
+            "description": "Detected PCI DSS File Modification - srvmgr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_74",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\srvmgr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_75",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - svchost.exe",
+            "description": "Detected PCI DSS File Modification - svchost.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_75",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\svchost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_76",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - sysedit.exe",
+            "description": "Detected PCI DSS File Modification - sysedit.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_76",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\sysedit.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_77",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - systray.exe",
+            "description": "Detected PCI DSS File Modification - systray.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_77",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\systray.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_78",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - taskman.exe",
+            "description": "Detected PCI DSS File Modification - taskman.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_78",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\taskman.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_79",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - taskmgr.exe",
+            "description": "Detected PCI DSS File Modification - taskmgr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_79",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\taskmgr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_80",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tcpsvcs.exe",
+            "description": "Detected PCI DSS File Modification - tcpsvcs.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_80",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tcpsvcs.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_81",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - telnet.exe",
+            "description": "Detected PCI DSS File Modification - telnet.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_81",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\telnet.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_82",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - termsrv.exe",
+            "description": "Detected PCI DSS File Modification - termsrv.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_82",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\termsrv.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_83",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tlntadmn.exe",
+            "description": "Detected PCI DSS File Modification - tlntadmn.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_83",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tlntadmn.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_84",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tlntsess.exe",
+            "description": "Detected PCI DSS File Modification - tlntsess.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_84",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tlntsess.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_85",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tlntsvr.exe",
+            "description": "Detected PCI DSS File Modification - tlntsvr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_85",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tlntsvr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_86",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tscon.exe",
+            "description": "Detected PCI DSS File Modification - tscon.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_86",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tscon.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_87",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tsdiscon.exe",
+            "description": "Detected PCI DSS File Modification - tsdiscon.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_87",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tsdiscon.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_88",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tskill.exe",
+            "description": "Detected PCI DSS File Modification - tskill.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_88",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tskill.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_89",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tsprof.exe",
+            "description": "Detected PCI DSS File Modification - tsprof.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_89",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tsprof.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_90",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - tsshutdn.exe",
+            "description": "Detected PCI DSS File Modification - tsshutdn.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_90",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\tsshutdn.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_91",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - unlodctr.exe",
+            "description": "Detected PCI DSS File Modification - unlodctr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_91",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\unlodctr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_92",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - upg351db.exe",
+            "description": "Detected PCI DSS File Modification - upg351db.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_92",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\upg351db.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_93",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ups.exe",
+            "description": "Detected PCI DSS File Modification - ups.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_93",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ups.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_94",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - user.exe",
+            "description": "Detected PCI DSS File Modification - user.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_94",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\user.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_95",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - userinit.exe",
+            "description": "Detected PCI DSS File Modification - userinit.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_95",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\userinit.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_96",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - usrmgr.exe",
+            "description": "Detected PCI DSS File Modification - usrmgr.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_96",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\usrmgr.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_97",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - utilman.exe",
+            "description": "Detected PCI DSS File Modification - utilman.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_97",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\utilman.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_98",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - verclsid.exe",
+            "description": "Detected PCI DSS File Modification - verclsid.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_98",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\verclsid.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_99",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - verifier.exe",
+            "description": "Detected PCI DSS File Modification - verifier.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_99",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\verifier.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_100",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - vwipxspx.exe",
+            "description": "Detected PCI DSS File Modification - vwipxspx.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_100",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\vwipxspx.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_101",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - w32tm.exe",
+            "description": "Detected PCI DSS File Modification - w32tm.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_101",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\w32tm.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_102",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - wextract.exe",
+            "description": "Detected PCI DSS File Modification - wextract.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_102",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\wextract.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_103",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winchat.exe",
+            "description": "Detected PCI DSS File Modification - winchat.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_103",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winchat.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_104",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winhlp32.exe",
+            "description": "Detected PCI DSS File Modification - winhlp32.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_104",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winhlp32.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_105",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - wininet.dll",
+            "description": "Detected PCI DSS File Modification - wininet.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_105",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\wininet.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_106",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winlogon.exe",
+            "description": "Detected PCI DSS File Modification - winlogon.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_106",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winlogon.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_107",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winmsd.exe",
+            "description": "Detected PCI DSS File Modification - winmsd.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_107",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winmsd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_108",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winsock.dll",
+            "description": "Detected PCI DSS File Modification - winsock.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_108",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winsock.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_109",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winspool.exe",
+            "description": "Detected PCI DSS File Modification - winspool.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_109",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winspool.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_110",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winver.exe",
+            "description": "Detected PCI DSS File Modification - winver.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_110",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\winver.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_111",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - ws2_32.dll",
+            "description": "Detected PCI DSS File Modification - ws2_32.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_111",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\ws2_32.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_112",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winsock.dll",
+            "description": "Detected PCI DSS File Modification - wsock32.dll",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_112",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\system32\\\\wsock32.dll"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_113",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - win.ini",
+            "description": "Detected PCI DSS File Modification - win.ini",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_113",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\win.ini"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "PCI_FIM_Windows_report_114",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PCI DSS FIM File Modification - winrep.exe",
+            "description": "Detected PCI DSS File Modification - winrep.exe",
+            "severity": 1,
+            "tags": [
+                "PCI FIM Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_PCI_FIM_WINDOWS_ioc_114",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:C\\:\\\\winrep.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }
+    ]
+}

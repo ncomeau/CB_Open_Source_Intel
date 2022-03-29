@@ -1,0 +1,1911 @@
+{
+    "feedinfo": {
+        "name": "cybercure_hashes",
+        "owner": "cybercure",
+        "provider_url": "http://www.cybercure.ai/",
+        "summary": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+        "category": "Open Source"
+    },
+    "reports": [
+        {
+            "id": "cybercure_hashes_0",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_0",
+                    "match_type": "query",
+                    "values": [
+                        "hash:90fd18ffa71b29049177eda4d95677c7"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_1",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_1",
+                    "match_type": "query",
+                    "values": [
+                        "hash:99fbd88dafad2ed4a82cc80f8b8eb8d4"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_2",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_2",
+                    "match_type": "query",
+                    "values": [
+                        "hash:abe9aec643444aee1e83b88946a231e0"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_3",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_3",
+                    "match_type": "query",
+                    "values": [
+                        "hash:a00205a5d2ff8b87d7deacec610a0e42"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_4",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_4",
+                    "match_type": "query",
+                    "values": [
+                        "hash:2f33c7896a966364df80bf9838471244"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_5",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_5",
+                    "match_type": "query",
+                    "values": [
+                        "hash:475adb1338da7415f70428997e7f59b7"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_6",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_6",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3675ebb7b35772e6aa87ec675b425876"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_7",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_7",
+                    "match_type": "query",
+                    "values": [
+                        "hash:85cec82b6834c7b0766695f832907416"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_8",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_8",
+                    "match_type": "query",
+                    "values": [
+                        "hash:eec94efa5ed6509918758db801933e39"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_9",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_9",
+                    "match_type": "query",
+                    "values": [
+                        "hash:0196c2848e6c12d2ea5bbacca4d2c0dc"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_10",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_10",
+                    "match_type": "query",
+                    "values": [
+                        "hash:6aafc6f04469e80bfb2ae8bd8a53efde"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_11",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_11",
+                    "match_type": "query",
+                    "values": [
+                        "hash:14b705a6300c09b7c14bd8418a27a8bb"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_12",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_12",
+                    "match_type": "query",
+                    "values": [
+                        "hash:6b93bd0f2252578d8a80d24e4f723d12"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_13",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_13",
+                    "match_type": "query",
+                    "values": [
+                        "hash:d53abde1757669161332ace2e512221c"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_14",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_14",
+                    "match_type": "query",
+                    "values": [
+                        "hash:375bc72392b53544eacb7cd92b4d5cc8"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_15",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_15",
+                    "match_type": "query",
+                    "values": [
+                        "hash:784d9e4b665f460588a92d96a8a7e8f6"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_16",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_16",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c10daee7207088a78cc7bc21a0bd9267"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_17",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_17",
+                    "match_type": "query",
+                    "values": [
+                        "hash:5be6a750c02a7150416596ebe989fdd2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_18",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_18",
+                    "match_type": "query",
+                    "values": [
+                        "hash:db434ba53573495415a46881bca54db6"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_19",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_19",
+                    "match_type": "query",
+                    "values": [
+                        "hash:088960bb3d4e5ec94ee566c2c3b845e6"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_20",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_20",
+                    "match_type": "query",
+                    "values": [
+                        "hash:41fcb878615751c7be2a1bc569c135ec"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_21",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_21",
+                    "match_type": "query",
+                    "values": [
+                        "hash:5432917cb6a676f21819b1a5e5bb4f80"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_22",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_22",
+                    "match_type": "query",
+                    "values": [
+                        "hash:34a34cdf3edafb0e40330b6d3114da17"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_23",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_23",
+                    "match_type": "query",
+                    "values": [
+                        "hash:4897c421789e5f46ff7a7d973103f16e"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_24",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_24",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c8754d5f5b65869ff1d3218e3cac7cc5"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_25",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_25",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dd4a2cd3f8dabfce721463d3064cf8e7"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_26",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_26",
+                    "match_type": "query",
+                    "values": [
+                        "hash:909ed15cad54c3af975bfd79ac5a282a"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_27",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_27",
+                    "match_type": "query",
+                    "values": [
+                        "hash:6d39b880f77994d7cde762ac598b1e93"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_28",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_28",
+                    "match_type": "query",
+                    "values": [
+                        "hash:17072fd6b4714c35aad86cd90458ead3"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_29",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_29",
+                    "match_type": "query",
+                    "values": [
+                        "hash:8f60323ecdbbd33f58430a9e84d508eb"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_30",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_30",
+                    "match_type": "query",
+                    "values": [
+                        "hash:150e4b841fe23355e211a194d1651b05"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_31",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_31",
+                    "match_type": "query",
+                    "values": [
+                        "hash:ee3ac9fddf9f6a11d6f305ef21c4d788"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_32",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_32",
+                    "match_type": "query",
+                    "values": [
+                        "hash:e39e42198814d99b26436126803ff05a"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_33",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_33",
+                    "match_type": "query",
+                    "values": [
+                        "hash:ed03cfcc81546aee052e5d3360abda8d"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_34",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_34",
+                    "match_type": "query",
+                    "values": [
+                        "hash:1dff20ee8a12679f825bfd41c0b1f293"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_35",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_35",
+                    "match_type": "query",
+                    "values": [
+                        "hash:6a98c515af04f6e7bde4cd2851e26644"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_36",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_36",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c23cce4499f1d20a8ef3d26fc790a788"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_37",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_37",
+                    "match_type": "query",
+                    "values": [
+                        "hash:ca411560b635afb65e18cb9ae4ebc7a1"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_38",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_38",
+                    "match_type": "query",
+                    "values": [
+                        "hash:b6e1f5813025af94fafe4584410dad60"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_39",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_39",
+                    "match_type": "query",
+                    "values": [
+                        "hash:642650b0114437bc2035bac2e43ffe0e"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_40",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_40",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dd9dacbe3ecb41ebac11bc9324679649"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_41",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_41",
+                    "match_type": "query",
+                    "values": [
+                        "hash:bc55d6aa9192717ff4d1f90e49eb9e3a"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_42",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_42",
+                    "match_type": "query",
+                    "values": [
+                        "hash:0ec3d6e9d8fbcb65ca560e06ecf5cd5d"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_43",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_43",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3d552130d1730fbd9cdd50c8d6da5d30"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_44",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_44",
+                    "match_type": "query",
+                    "values": [
+                        "hash:ed39402aa43bebf9dc6839dcb9cecf03"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_45",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_45",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3410587484e70a627d5db7742ee8dcec"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_46",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_46",
+                    "match_type": "query",
+                    "values": [
+                        "hash:779ff824019cb8ac60f79a11f5c7f07f"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_47",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_47",
+                    "match_type": "query",
+                    "values": [
+                        "hash:13fe4ac903e80a9e9a36bceb0eac4a05"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_48",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_48",
+                    "match_type": "query",
+                    "values": [
+                        "hash:8b2abbfef3b29b00800de344537eb9fa"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_49",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_49",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3dbc8386e91b0e967982fe4aafbbd881"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_50",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_50",
+                    "match_type": "query",
+                    "values": [
+                        "hash:1640324546304f2dcb54883528652ccf"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_51",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_51",
+                    "match_type": "query",
+                    "values": [
+                        "hash:4bdeca6d03434eecdd52f5c172feacb1"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_52",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_52",
+                    "match_type": "query",
+                    "values": [
+                        "hash:0a6afeacc9b2fbd00befaa175e455486"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_53",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_53",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dcbd3ec30661cf7c1f237ba158c9941e"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_54",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_54",
+                    "match_type": "query",
+                    "values": [
+                        "hash:905d06d372cf76e6f0a5da58c53bb7e5"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_55",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_55",
+                    "match_type": "query",
+                    "values": [
+                        "hash:45328f277a965d6cdb1471c06a3f4d88"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_56",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_56",
+                    "match_type": "query",
+                    "values": [
+                        "hash:ccae93707ac700ec29e8ed1bee045c0d"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_57",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_57",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c93f3d9eabb52efe3224f87cd05978bf"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_58",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_58",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3d18ae12b9d8edc29ee15d0cf72d854e"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_59",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_59",
+                    "match_type": "query",
+                    "values": [
+                        "hash:64ba1e923113f112346c696c0c532fca"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_60",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_60",
+                    "match_type": "query",
+                    "values": [
+                        "hash:5423e34baca518550fd609ea43a1f0b2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_61",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_61",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dd495486230f244368a1c1809ede7ceb"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_62",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_62",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dbfd56c5057244d0aefe8233c4449221"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_63",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_63",
+                    "match_type": "query",
+                    "values": [
+                        "hash:a016e3238bffed895ab05dbefb0ee143"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_64",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_64",
+                    "match_type": "query",
+                    "values": [
+                        "hash:e2d2857b4144906ab2c4674ab3629f54"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_65",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_65",
+                    "match_type": "query",
+                    "values": [
+                        "hash:16b5fae33ab25717d873b0c12b96a331"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_66",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_66",
+                    "match_type": "query",
+                    "values": [
+                        "hash:eb893945ca892b2592599e9f76a6e63b"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_67",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_67",
+                    "match_type": "query",
+                    "values": [
+                        "hash:78c4bdfcf25809ee9b641f652c7ddc5b"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_68",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_68",
+                    "match_type": "query",
+                    "values": [
+                        "hash:5552465c4db88a9bb72ed2c44108aa7d"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_69",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_69",
+                    "match_type": "query",
+                    "values": [
+                        "hash:44200e6da6e4759c926fa688f2120980"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_70",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_70",
+                    "match_type": "query",
+                    "values": [
+                        "hash:cc6d78a0d3de6c37f1cc8d9de0f1a30a"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_71",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_71",
+                    "match_type": "query",
+                    "values": [
+                        "hash:bde639535ef46919a0a79d41ab1c483a"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_72",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_72",
+                    "match_type": "query",
+                    "values": [
+                        "hash:9a3b80db24cbb0c95ccbea81f54317c9"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_73",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_73",
+                    "match_type": "query",
+                    "values": [
+                        "hash:987d453dfcd48f5d2a6e101f3c67d080"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_74",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_74",
+                    "match_type": "query",
+                    "values": [
+                        "hash:fb3b3a4c0e692d642675b1a701e662f8"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_75",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_75",
+                    "match_type": "query",
+                    "values": [
+                        "hash:7d0714b8493d61ab08359010ca00e5c5"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_76",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_76",
+                    "match_type": "query",
+                    "values": [
+                        "hash:62b9cc47640e7754761efe88c375aa7c"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_77",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_77",
+                    "match_type": "query",
+                    "values": [
+                        "hash:8383f1a4fc198ae2c2655b0a0443443b"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_78",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_78",
+                    "match_type": "query",
+                    "values": [
+                        "hash:28cb7f49058c0640ea45db56f6221d1b"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_79",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_79",
+                    "match_type": "query",
+                    "values": [
+                        "hash:dfa9f37c769db7c48c6442fedbc0fdbe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_80",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_80",
+                    "match_type": "query",
+                    "values": [
+                        "hash:fecedeedc700847c52753f372c6b6357"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_81",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_81",
+                    "match_type": "query",
+                    "values": [
+                        "hash:fa09cad7569121da3e8f9ec1a346a099"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_82",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_82",
+                    "match_type": "query",
+                    "values": [
+                        "hash:2dafa8ead834dab5e599952dc513c477"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_83",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_83",
+                    "match_type": "query",
+                    "values": [
+                        "hash:b0dba09217141e0a1e15252ed414fc27"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_84",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_84",
+                    "match_type": "query",
+                    "values": [
+                        "hash:962e412d3dfb5757ca58b9666cd5a549"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_85",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_85",
+                    "match_type": "query",
+                    "values": [
+                        "hash:24cb4e9a3017e4af21483d2a89203819"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_86",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_86",
+                    "match_type": "query",
+                    "values": [
+                        "hash:9aa2f539b6a717dea5e3cb290902ea28"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_87",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_87",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c77a22b04787fa2fa1a448d833f4394d"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_88",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_88",
+                    "match_type": "query",
+                    "values": [
+                        "hash:7ba5ce04595768a6ee7814366aa611a8"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_89",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_89",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c3d8b9d5bb048eebca994cdce641f885"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_90",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_90",
+                    "match_type": "query",
+                    "values": [
+                        "hash:3eaddea52e0ece94c382cb1d09a7c19c"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_91",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_91",
+                    "match_type": "query",
+                    "values": [
+                        "hash:2707302c8c6162e669fcec0136987155"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_92",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_92",
+                    "match_type": "query",
+                    "values": [
+                        "hash:09de7946562ae2d602bc049dbb830303"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_93",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_93",
+                    "match_type": "query",
+                    "values": [
+                        "hash:eb13f4258b6cc0efae5842d610b52816"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_94",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_94",
+                    "match_type": "query",
+                    "values": [
+                        "hash:97ee19cc564a96bb3c63bdcd6d333740"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_95",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_95",
+                    "match_type": "query",
+                    "values": [
+                        "hash:f9e30c52499fe9b0670bfcdea05bf61b"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_96",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_96",
+                    "match_type": "query",
+                    "values": [
+                        "hash:c09c6de2460cef9709d0e552c0c8d0fd"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_97",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_97",
+                    "match_type": "query",
+                    "values": [
+                        "hash:2b022f968f63a664a8fa793d63321f99"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_98",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_98",
+                    "match_type": "query",
+                    "values": [
+                        "hash:5c828f5f19e0a0d3575a0c7bdd5cfa50"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cybercure_hashes_99",
+            "timestamp": 1647883371,
+            "tags": [
+                "cybercure_hashes"
+            ],
+            "title": "Malsilo potential domains",
+            "description": "Cyber Cure established to share cyber intelligence with small and medium networks as well as with home users.\nCyber Cure offers several indicators that are being collected from the internet and provided by commercial vendors running honeypots and honeynets.\nYou can check the status page to see our current coverage of honeypot installations around the world at uptime.cybercure.ai Using Cyber Cure users can block and/or identify malware and threats, the data can be integrated with many popular vendors products and can be easily adjust to many others that supports the standards.\nCyber Cure Free is updated every several hours while Cyber Cure Premium is being updated every 10 minutes with new indicators and data.\n\nFP Rate Unknown.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "cybercure_hashes_99",
+                    "match_type": "query",
+                    "values": [
+                        "hash:50277f214d447d0890c53466fb68af0e"
+                    ]
+                }
+            ]
+        }
+    ]
+}

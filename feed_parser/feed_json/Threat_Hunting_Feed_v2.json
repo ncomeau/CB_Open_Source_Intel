@@ -1,0 +1,1510 @@
+{
+    "feedinfo": {
+        "id": "Threat_Hunting_Feed_v2",
+        "name": "Threat_Hunting_Feed_v2",
+        "owner": "TH_Examples",
+        "provider_url": "https://github.com/carbonblack/community",
+        "summary": "This feed is a collection of Threat Hunting starting points",
+        "category": "TH Internal Test - Rob Eberhardt",
+        "access": "private"
+    },
+    "reports": [
+{
+            "id": "TH_Hunting_report_1",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Connections from external addresses towards internal machine(s)",
+            "description": "Detected Connections from external addresses towards internal machine(s)",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Inbound Netconn"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_ext_to_int_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255] OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:true"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_2",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Connections from internal machine towards external addresse(s)",
+            "description": "Detected Connections from internal machine towards external addresse(s)",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Outbound Netconn"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_int_to_ext_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:false"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_3",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Connections of process that are hosting injected thread",
+            "description": "Detected Connections of process that are hosting injected thread",
+            "severity": 3,
+            "tags": [
+                "Threat Hunting",
+                "Code Injection",
+                "Netconn"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_netconn_with_code_injection_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "netconn_count:[1 TO *] AND ttp:INJECT_CODE"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_4",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "External connections from/towards processes with listening connections",
+            "description": "Detected External connections from/towards processes with listening connections",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Inbound Connection",
+                "Active Listener"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_active_listener_inbound_netconn_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:true AND ttp:FIXED_PORT_LISTEN"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_5",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for mail connections offsite",
+            "description": "Detected mail connections offsite",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Outbound",
+                "Unauthorized email"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_offsite_email_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255] OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND (netconn_port:587 OR netconn_port:25 OR netconn_domain:smtp* OR netconn_domain:*mail*)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_6",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for strange DNS traffic",
+            "description": "Detected strange DNS traffic",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "DNS"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_offsite_email_activity_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "ttp:LOW_REPUTATION_SITE OR ttp:SUSPICIOUS_DOMAIN OR ttp:SUSPICIOUS_SITE"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_7",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Processes that are not signed and verified, which have unresolved domain DNS lookups",
+            "description": "Detected Processes that are not signed and verified, which have unresolved domain DNS lookups",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "DNS",
+                "Unsigned Binary"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unsigned_binary_with_failed_lookup_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND NOT process_publisher_state:FILE_SIGNATURE_STATE_VERIFIED AND netconn_failed:true"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_8",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Processes that have an unsigned image file, which have loaded modules that are floating code",
+            "description": "Detected Processes that have an unsigned image file, which have loaded modules that are floating code",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Code Injection",
+                "Unsigned Binary"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unsigned_binary_with_code_injection_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND modload_count:[1 TO *] AND (ttp:INJECT_CODE OR ttp:HAS_INJECTED_CODE OR ttp:HAS_MALWARE_CODE)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_10",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for processes that have an unsigned image file and have Shell with elevated privileges",
+            "description": "Detected processes that has an unsigned image file and Shell with elevated privileges",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Privilege Escalation",
+                "Command Shell"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unsigned_binary_with_shell_and_priv_esc_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND ttp:RUN_CMD_SHELL AND ttp:PRIVILEGE_ESCALATE"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_11",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for shell children of MS Office",
+            "description": "Detected MS Office with Command Shell",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "MS Office",
+                "Command Shell"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_office_with_cmd_shell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_name:cmd.exe OR process_name:powershell.exe) AND (parent_name:winword.exe OR parent_name:powerpnt.exe OR parent_name:excel.exe)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_12",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for remote desktop control",
+            "description": "Detected Remote Desktop Usage",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Remote Desktop"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_remote_desktop_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:vnc.exe OR process_name:mstsc.exe OR process_name:vncviewer.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_13",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for PSEXEC",
+            "description": "Detected PSEXEC Usage",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "PSEXEC",
+                "REXEC"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_psexec_usage_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:psexec.exe OR process_name:rexec.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_14",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for firewall modifications and port forwarding",
+            "description": "Detected firewall modifications and port forwarding",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Firewall Modification"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_firewall_mod_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "regmod_name:FirewallRules*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_15",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for binaries running from temp",
+            "description": "Detected Binaries running from temp",
+            "severity": 3,
+            "tags": [
+                "Threat Hunting",
+                "Process from Temp folder"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_firewall_mod_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:temp\\*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_16",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for unknown unsigned binaries",
+            "description": "Detected Unknown unsigned binaries",
+            "severity": 3,
+            "tags": [
+                "Threat Hunting",
+                "Unknown Binary",
+                "Unsigned Binary"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unknown_unsigned_binary_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND (process_reputation:NOT_LISTED OR process_reputation:UNKNOWN)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_17",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for registry keys in command lines",
+            "description": "Detected registry keys in command lines",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Registry",
+                "Command Line"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_registry_key_in_cmdline_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_cmdline:HKEY OR process_cmdline:HKLM OR process_cmdline:HKU) AND process_name:cmd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },        
+{
+            "id": "TH_Hunting_report_18",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for javascript in command lines",
+            "description": "Detected javascript in command lines",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Javascript",
+                "Command Line"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_javascript_in_cmdline_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_cmdline:.js OR process_cmdline:java) AND process_name:cmd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }, 
+{
+            "id": "TH_Hunting_report_19",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for unsigned normally signed binaries",
+            "description": "Detected unsigned binaries that are usually signed",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Unsigned Binary",
+                "Unusual Signing"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unusual_binary_signing_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_name:explorer.exe~ OR process_name:svchost.exe~ OR process_name:powershell.exe~ OR process_name:lsass.exe~) AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }, 
+{
+            "id": "TH_Hunting_report_20",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for binaries with dual extension",
+            "description": "Detected binaries with dual extension",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Dual Extension"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_dual_extension_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:\/\\\\.[^\\\\.]{2,3}\\\\.[^\\\\.]{2,3}\/"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_21",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for processes with listening connections",
+            "description": "Detected processes with listening connections",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Listening Process"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_listening_process_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "ttp:FIXED_PORT_LISTEN"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_22",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for children of Microsoft Office",
+            "description": "Detected children of Microsoft Office",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "Office with Children"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_office_children_process_1_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_name:winword.exe OR process_name:powerpnt.exe OR process_name:excel.exe) AND childproc_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_office_children_process_2_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_product_name:*office* childproc_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_23",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for privelege escalation attempts",
+            "description": "Detected privelege escalation attempts",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Privilege Escalation"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_priv_esc_1_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_cmdline:\"net user\" OR process_cmdline:\"/add\" OR process_name:wce.exe OR process_cmdline:\"net create\" AND device_os:WINDOWS) OR ttp:PRIVILEGE_ESCALATE"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },  
+{  
+            "id": "TH_Hunting_report_24",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for uncommon RATs",
+            "description": "Detected uncommon RAT",
+            "severity": 8,
+            "tags": [
+                "Threat Hunting",
+                "Uncommon RATs"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_revenge_rat_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(childproc_name:svchost.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND device_os:WINDOWS)"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_net_office_rat_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher:\"NetSupport Ltd\" AND netconn_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_imminent_rat_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "((parent_name:winword.exe AND childproc_name:cmd.exe AND filemod_name:\"*\\appdata\\local\\temp\\qshlun\\qshlun.exe\" AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED) OR childproc_name:cmd.exe AND childproc_name:qshlun.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED)"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_ghost_rat_iron_tiger_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:\"C:\\windows\\*.exe\" AND filemod_name:\"C:\\*.vbs\" AND childproc_name:wscript.exe AND modload_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND regmod_name:connectgroup"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_remcos_rat_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "modload_name:remcos.exe AND netconn_count:[1 TO *]"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_25",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for use of RDP",
+            "description": "Detected use of RDP",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "RDP",
+                "3389"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_rdp_port_usage_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "netconn_port:3389"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }, 
+{
+            "id": "TH_Hunting_report_26",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for volume shadow copy deletes",
+            "description": "Detected volume shadow copy deletes",
+            "severity": 8,
+            "tags": [
+                "Threat Hunting",
+                "VSSAdmin",
+                "Volume Shadow"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_vss_delete_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:delete AND process_cmdline:shadows"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }, 
+{
+            "id": "TH_Hunting_report_27",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for disabling of boot loader recovery",
+            "description": "Detected disabling of boot loader recovery",
+            "severity": 8,
+            "tags": [
+                "Threat Hunting",
+                "Boot Loader"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_boot_loader_disble_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:\"fdisk /mbr\" OR process_cmdline:cipher"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_28",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for file sharing apps",
+            "description": "Detected file sharing apps",
+            "severity": 3,
+            "tags": [
+                "Threat Hunting",
+                "File Sharing"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_file_sharing_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:ftp.exe OR process_name:onedrive.exe OR process_name:dropbox.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_29",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for binaries downloaded from internet",
+            "description": "Detected binaries downloaded from internet",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Internet Downloads"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_binary_from_internet_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_name:iexplore.exe OR process_name:firefox.exe OR process_name:chrome.exe) AND filemod_name:*.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_30",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for HTTP in command lines",
+            "description": "Detected HTTP in command lines",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "HTTP Command Line"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_http_in_cmdline_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:http"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_31",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for Base64 in command lines",
+            "description": "Detected Base64 in command lines",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "Base64 Command Line"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_base64_cmdline_1_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND process_cmdline:FromBase64String"
+                    ],
+                    "field": null,
+                    "link": null
+                },
+                {
+                    "id": "query_base64_cmdline_2_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:*=*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_32",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for SVCHOST.exe without parent of SERVICES.exe",
+            "description": "Detected SVCHOST.exe without parent of SERVICES.exe",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "svchost",
+                "Strange Parent"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_svchost_strange_parent_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:svchost.exe AND NOT parent_name:services.exe AND parent_name:*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_33",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for hidden powershell",
+            "description": "Detected hidden powershell",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "hidden"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_hidden_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND process_cmdline:hidden"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_34",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for Obfuscated powershell",
+            "description": "Detected Obfuscated powershell",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "obfuscated"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_obfucated_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND (process_cmdline:Encoded-Command OR process_cmdline:iex)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_35",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for Powershell download commands",
+            "description": "Detected Powershell download commands",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "obfuscated"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_http_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell.exe AND process_cmdline:http"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_36",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for encoded Powershell processes",
+            "description": "Detected encoded Powershell processes",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "encoded"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_encoded_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:powershell* AND (process_cmdline:*\\^* OR process_cmdline:\"-Enc\" OR process_cmdline:\"-NoP\" OR process_cmdline:\"-Exec\" OR process_cmdline:\"bypass\" OR process_cmdline:\"hidden\" OR process_cmdline:\"-EncodedCommand\" OR process_cmdline:\"IEX\" OR process_cmdline:\"Invoke-Expression\")"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_37",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for unsigned unknown wmiprve system children",
+            "description": "Detected unsigned unknown wmiprvse system children",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "wmiprvse",
+                "Unsigned Binary"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_wmiprvse_children_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:wmiprvse.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED -legacy:true"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_38",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for children of cscript and wscript ",
+            "description": "Detected children of cscript and wscript ",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "cscript",
+                "wscript",
+                "Unexpected ChildProc"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_children_of_cscript_wscript_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:cscript.exe OR parent_name:wscript.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_39",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for PowerShell in Services",
+            "description": "Detected PowerShell in Services",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "Services"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_powershell_as_a_service_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(parent_name:services.exe OR parent_name:svchost.exe) AND process_name:powershell.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_40",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for Windows Commandline spawning PowerShell",
+            "description": "Detected Windows Commandline spawning PowerShell",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "powershell",
+                "cmd.exe"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_cmd_spawn_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:cmd.exe AND process_name:powershell.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_41",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "All processes, which have image files that have executed from Temp Folder and not signed",
+            "description": "Detected Unsigned Binary executed from Temp",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "temp",
+                "Unsigned Binary"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_cmd_spawn_powershell_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:*temp\\* AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_42",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for modified hosts files",
+            "description": "Detected modified hosts files",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "Hosts file"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_modified_hosts_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:\"c:\\windows\\system32\\drivers\\etc\\hosts\""
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_43",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for assets with an OS type of Linux",
+            "description": "Detected assets with an OS type of Linux",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Linux"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_Linux_Hosts_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "device_os:LINUX"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_44",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for assets with an OS type of Windows",
+            "description": "Detected assets with an OS type of Windows",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Windows"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_Windows_Hosts_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "device_os:WINDOWS"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_45",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for web related assets with services running apache, ngix, iis, tomcat",
+            "description": "Detected web related assets with services running apache, ngix, iis, tomcat",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Web Hosting"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_web_hosting_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:nginx* OR parent_name:apache* OR parent_name:w3wp.exe OR parent_name:tomcat* OR parent_name:httpd*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_46",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for database related assests with services running SQL, mongodb, etc",
+            "description": "Detected database related assests with services running SQL, mongodb, etc",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Web Hosting"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_db_hosting_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:sql.exe OR parent_name:mongodb.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_47",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Hunt for email related assets running exchange, lotus, smtp, pop3, imap, etc",
+            "description": "Detected email related assets running exchange, lotus, smtp, pop3, imap, etc",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Email"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_email_assets_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(process_name:outlook.exe OR process_name:notes.exe) AND (netconn_port:25 OR netconn_port:110 OR netconn_port:143 OR netconn_port:465 OR netconn_port:587 OR netconn_port:993)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_48",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "High number of internal connections",
+            "description": "Detected high number of internal connections",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "High Netconns",
+                "Internal Netconns"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_high_internal_netconns_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "netconn_count:[500 TO *] AND (netconn_ipv4:10.* OR netconn_ipv4:192.* OR netconn_ipv4:172.*)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_49",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Absolute high number of internal outgoing embroyonic connections",
+            "description": "Detected high number of internal outgoing embroyonic connections",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Embryonic Netconns",
+                "External Netconns"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_high_failed_netconns_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "netconn_count:[500 TO *] AND netconn_failed:true"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_50",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Processes with autorun registry key",
+            "description": "Detected processes with autorun registry key",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "Autorun",
+                "Registry"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_autorun_registry_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "regmod_name:CurrentVersion\\Run*"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_51",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Autostart services",
+            "description": "Detected autostart services",
+            "severity": 1,
+            "tags": [
+                "Threat Hunting",
+                "Autostart",
+                "Services"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_autostart_services_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:services.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_52",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Scheduled task executed from temp",
+            "description": "Detected Scheduled task executed from temp",
+            "severity": 5,
+            "tags": [
+                "Threat Hunting",
+                "Scheduled Task",
+                "temp"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_scheduled_task_temp_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:temp\\* AND parent_name:schtasks.exe OR parent_name:taskeng.exe OR parent_name:taskhostex.exe OR parent_name:Backgroundtaskhost.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_53",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Changes to Startup windows folder",
+            "description": "Detected change to Startup windows folder",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "Startup",
+                "temp"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_startup_folder_change_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "filemod_name:\"Start\\ Menu\\Programs\\Startup\\* OR process_name:Start\\ Menu\\Programs\\Startup\\*\""
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_54",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "External connections from/towards processes with listening connections",
+            "description": "Detected external connections from/towards processes with listening connections",
+            "severity": 2,
+            "tags": [
+                "Threat Hunting",
+                "External Netconns",
+                "Active Listener"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_external_netconn_active_listener_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND ttp:FIXED_PORT_LISTEN"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_55",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "External connections from/towards injected processes",
+            "description": "Detected External connections from/towards injected processes",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "External Netconns",
+                "injected Process"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_external_netconn_injected_process_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND (ttp:COMPROMISED_PROCESS OR ttp:INJECT_CODE)"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_56",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "External connections from processes hosting injected thread",
+            "description": "Detected External connections from processes hosting injected thread",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "External Netconns",
+                "injected Thread"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_external_netconn_injected_thread_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:false"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_57",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "PSEXEC or Remote Execution",
+            "description": "Detected PSEXEC or Remote Execution",
+            "severity": 4,
+            "tags": [
+                "Threat Hunting",
+                "PSEXEC"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_psexec_remote_execution_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:psexec.exe OR  process_name:rexec.exe OR  process_name:rcmd.exe OR  process_name:xcmd.exe"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_58",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Usage of RunAs command",
+            "description": "Detected usage of RunAs command",
+            "severity": 3,
+            "tags": [
+                "Threat Hunting",
+                "runas"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_runas_usage_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_name:runas.exe OR process_cmdline:runas"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_59",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Wmiprvse.exe executed by an unsigned parent process which is executed by SYSTEM user",
+            "description": "Detected Wmiprvse.exe by unsigned parent process executed by SYSTEM user",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "wmiprvse",
+                "SYSTEM user",
+                "Unsigned Parent"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_wmiprvse_unsigned_parent_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND childproc_name:wmiprvse.exe AND process_username:SYSTEM"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_60",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Execution of unsigned child or grandchild by wmic.exe",
+            "description": "Execution of unsigned child or grandchild by wmic.exe",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "wmi",
+                "Unsigned Process"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_wmic_unsigned_process_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "parent_name:wmic.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_61",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Unsigned process which is a child of wmiprvse.exe and is executed with system",
+            "description": "Detected unsigned process which is a child of wmiprvse.exe and is executed with system",
+            "severity": 6,
+            "tags": [
+                "Threat Hunting",
+                "SYSTEM user",
+                "Unsigned Process"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_unsigned_process_wmiprvse_child_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND parent_name:wmiprvse.exe AND process_username:SYSTEM"
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        },
+{
+            "id": "TH_Hunting_report_62",
+            "timestamp": 1548285852,
+            "link": "https://github.com/carbonblack/community",
+            "title": "Potential Pass the Ticket",
+            "description": "Detected potential Pass the Ticket",
+            "severity": 8,
+            "tags": [
+                "Threat Hunting",
+                "Pass the ticket",
+                "Golden ticket"
+                ],
+            "iocs_v2": [
+                {
+                    "id": "query_potential_pass_the_ticket_ioc",
+                    "match_type": "query",
+                    "values": [
+                            "process_cmdline:\"kerberos::golden\" OR process_cmdline:\"kerberos::ptt\""
+                    ],
+                    "field": null,
+                    "link": null
+                }
+            ]
+        }
+
+    ]
+}

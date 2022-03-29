@@ -1,0 +1,111 @@
+<Watchlists>
+    name: "watchlists"
+    on_enter:
+        root.initWindow()
+        root.initWl()
+        root.initNav()
+        root.basic_nav.ids.nav_drawer.set_state("close")
+    on_leave:
+        root.ids.not_enabled.clear_widgets()
+        root.ids.enabled.clear_widgets()
+        root.ids.alerted.clear_widgets()
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "top"
+        MDToolbar:
+            id: toolbar
+            title: "CB Open Source Intel - Watchlists"
+            anchor_title: "center"
+            left_action_items: [["menu", lambda x: root.basic_nav.ids.nav_drawer.set_state("open")]]
+
+    FloatLayout:
+        MDTabs:
+            pos_hint:{"center_x":0.5,"top":(0.995-toolbar.height/root.height)}
+
+            id: wl_tabs
+            tab_hint_x: True
+            allow_stretch: True
+
+            Tab:
+                id: not_enabled_tab
+                text: "Not Enabled WLs"
+                ScrollView:
+                    MDList:
+                        id: not_enabled
+
+            Tab:
+                id: enabled_tab
+                text: "Enabled WLs"
+                ScrollView:
+                    MDList:
+                        id: enabled
+
+            Tab:
+                id: alerted_tab
+                text: "Alerted WLs"
+                ScrollView:
+                    MDList:
+                        id: alerted
+
+
+<FeedBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(200), 0
+            on_release:
+                app.watchlists.get_info(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Manage WL"
+            md_bg_color: 0, 0.7, 0, 0.5
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(80), 0
+            on_release:
+                app.watchlists.manage_disabled_feed(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)
+
+
+<WatchlistBtn>:
+    size_hint_y: None
+    height: list_item.height
+
+    TwoLineIconListItem:
+        id: list_item
+        text: root.text
+        secondary_text: root.secondary_text
+        secondary_font_style: "Caption"
+        color_active: app.theme_cls.primary_light
+        IconLeftWidget:
+            icon: root.icon
+
+        MDFillRoundFlatButton:
+            text: "Feed Info"
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(200), 0
+            on_release:
+                app.watchlists.get_wl_info(self.parent.ids._lbl_secondary.text)
+
+        MDFillRoundFlatButton:
+            text: "Manage WL"
+            md_bg_color: 0, 0.7, 0, 0.5
+            ripple_scale: .5
+            pos_hint: {"center_y": .5}
+            pos: list_item.width - self.width - dp(80), 0
+            on_release:
+                app.watchlists.decider(self.parent.ids._lbl_secondary.text,self.parent.ids._lbl_primary.text)

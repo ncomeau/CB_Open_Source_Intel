@@ -1,0 +1,1502 @@
+{
+    "feedinfo": {
+        "name": "Mayers_Magic_Queries",
+        "owner": "Patrick Mayer",
+        "provider_url": "https://github.com/carbonblack/community",
+        "summary": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+        "category": "Patrick Mayer"
+    },
+    "reports": [
+        {
+            "id": "mayers_magic_queries_0",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Connections from external addresses towards internal machine(s)",
+                "network_mapping"
+            ],
+            "title": "Connections from external addresses towards internal machine(s)",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668040",
+                    "match_type": "query",
+                    "values": [
+                        "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:true "
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_1",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Connections from internal machine towards external addresse(s)",
+                "network_mapping"
+            ],
+            "title": "Connections from internal machine towards external addresse(s)",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668041",
+                    "match_type": "query",
+                    "values": [
+                        "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:false"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_2",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Connections of process that are hosting injected thread",
+                "network_oddities"
+            ],
+            "title": "Connections of process that are hosting injected thread",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668042",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_count:[1 TO *] AND ttp:INJECT_CODE"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_3",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "External connections from/towards processes with listening connections",
+                "network_oddities"
+            ],
+            "title": "External connections from/towards processes with listening connections",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668043",
+                    "match_type": "query",
+                    "values": [
+                        "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255]  OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND netconn_inbound:true AND ttp:FIXED_PORT_LISTEN"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_4",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for mail connections offsite",
+                "network_oddities"
+            ],
+            "title": "Hunt for mail connections offsite",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668044",
+                    "match_type": "query",
+                    "values": [
+                        "(netconn_ipv4:[0.0.0.1 TO 9.255.255.255] OR netconn_ipv4:[11.0.0.0 TO 127.0.0.0] OR netconn_ipv4:[127.0.0.2 TO 171.255.255.255] OR netconn_ipv4:[173.0.0.0 TO 191.255.255.255] OR netconn_ipv4:[193.0.0.0 TO 255.255.255.255]) AND (netconn_port:587 OR netconn_port:25 OR netconn_domain:smtp* OR netconn_domain:*mail*) "
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_5",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for strange DNS traffic",
+                "network_oddities"
+            ],
+            "title": "Hunt for strange DNS traffic",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668045",
+                    "match_type": "query",
+                    "values": [
+                        "ttp:LOW_REPUTATION_SITE OR ttp:SUSPICIOUS_DOMAIN OR ttp:SUSPICIOUS_SITE "
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_6",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Processes that are not signed and verified, which have unresolved domain DNS lookups:",
+                "network_oddities"
+            ],
+            "title": "Processes that are not signed and verified, which have unresolved domain DNS lookups:",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668046",
+                    "match_type": "query",
+                    "values": [
+                        "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND NOT process_publisher_state:FILE_SIGNATURE_STATE_VERIFIED AND netconn_failed:true"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_7",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for unsigned modules in signed processes/binaries",
+                "loaded_modules"
+            ],
+            "title": "Hunt for unsigned modules in signed processes/binaries",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668047",
+                    "match_type": "query",
+                    "values": [
+                        "process_publisher_state:FILE_SIGNATURE_STATE_SIGNED AND modload_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED "
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_8",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for shell children of MS Office",
+                "process_anomalies"
+            ],
+            "title": "Hunt for shell children of MS Office",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668048",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:cmd.exe OR process_name:powershell.exe) AND (parent_name:winword.exe OR parent_name:powerpnt.exe OR parent_name:excel.exe)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_9",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for remote desktop control",
+                "process_anomalies"
+            ],
+            "title": "Hunt for remote desktop control",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_16473668049",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:vnc.exe OR process_name:mstsc.exe OR process_name:vncviewer.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_10",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for PsExec",
+                "process_anomalies"
+            ],
+            "title": "Hunt for PsExec",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680410",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:psexec.exe OR process_name:rexec.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_11",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for firewall modifications and port forwarding",
+                "process_anomalies"
+            ],
+            "title": "Hunt for firewall modifications and port forwarding",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680411",
+                    "match_type": "query",
+                    "values": [
+                        "regmod_name:FirewallRules*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_12",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for binaries running from temp",
+                "process_anomalies"
+            ],
+            "title": "Hunt for binaries running from temp",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680412",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:temp\\\\*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_13",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for binaries running from temp 2",
+                "process_anomalies"
+            ],
+            "title": "Hunt for binaries running from temp 2",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680413",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:C\\:\\\\Temp\\\\*.exe OR process_name:C\\:\\\\Users\\\\*\\\\Appdata\\\\Local\\\\Temp\\\\*.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_14",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for services running from desktop",
+                "process_anomalies"
+            ],
+            "title": "Hunt for services running from desktop",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680414",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:\\\\Users\\\\**\\\\desktop\\\\** AND parent_name:svchost.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_15",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for unknown unsigned binaries",
+                "process_anomalies"
+            ],
+            "title": "Hunt for unknown unsigned binaries",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680415",
+                    "match_type": "query",
+                    "values": [
+                        "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND (process_reputation:NOT_LISTED OR process_reputation:RESOLVING)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_16",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for registry keys in command lines",
+                "process_anomalies"
+            ],
+            "title": "Hunt for registry keys in command lines",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680416",
+                    "match_type": "query",
+                    "values": [
+                        "(process_cmdline:HKEY OR process_cmdline:HKLM OR process_cmdline:HKU) AND process_name:cmd.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_17",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for javascript in command lines",
+                "process_anomalies"
+            ],
+            "title": "Hunt for javascript in command lines",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680417",
+                    "match_type": "query",
+                    "values": [
+                        "(process_cmdline:.js OR process_cmdline:java) AND process_name:cmd.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_18",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for unsigned normally signed binaries",
+                "process_anomalies"
+            ],
+            "title": "Hunt for unsigned normally signed binaries",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680418",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:explorer.exe~ OR process_name:svchost.exe~ OR process_name:powershell.exe~ OR process_name:lsass.exe~) AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED "
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_19",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for processes with listening connections",
+                "process_anomalies"
+            ],
+            "title": "Hunt for processes with listening connections",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680419",
+                    "match_type": "query",
+                    "values": [
+                        "ttp:FIXED_PORT_LISTEN"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_20",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for children of Microsoft Office",
+                "process_anomalies"
+            ],
+            "title": "Hunt for children of Microsoft Office",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680420",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:winword.exe OR process_name:powerpnt.exe OR process_name:excel.exe) AND childproc_count:[1 TO *]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_21",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for children of Microsoft Office 2",
+                "process_anomalies"
+            ],
+            "title": "Hunt for children of Microsoft Office 2",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680421",
+                    "match_type": "query",
+                    "values": [
+                        "process_product_name:*office* childproc_count:[1 TO *]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_22",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for net user or net create",
+                "process_anomalies"
+            ],
+            "title": "Hunt for net user or net create",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680422",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:net\\ user OR process_cmdline:\\/add OR process_name:wce.exe OR process_cmdline:net\\ create"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_23",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Revenge Rat",
+                "uncommon_rats"
+            ],
+            "title": "Revenge Rat",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680423",
+                    "match_type": "query",
+                    "values": [
+                        "(childproc_name:svchost.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND device_os:WINDOWS)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_24",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "NetSupport Rat",
+                "uncommon_rats"
+            ],
+            "title": "NetSupport Rat",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680424",
+                    "match_type": "query",
+                    "values": [
+                        "process_publisher:\"NetSupport Ltd\" AND netconn_count:[1 TO *]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_25",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Gh0st RAT of IronTiger",
+                "uncommon_rats"
+            ],
+            "title": "Gh0st RAT of IronTiger",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680425",
+                    "match_type": "query",
+                    "values": [
+                        "filemod_name:C\\:\\\\*\\\\windows\\\\*.exe AND filemod_name:C\\:\\\\*.vbs AND childproc_name:wscript.exe AND modload_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND regmod_name:connectgroup"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_26",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Remcos RAT Variant",
+                "uncommon_rats"
+            ],
+            "title": "Remcos RAT Variant",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680426",
+                    "match_type": "query",
+                    "values": [
+                        "modload_name:remcos.exe AND netconn_count:[1 TO *]"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_27",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for use of RDP",
+                "rdp"
+            ],
+            "title": "Hunt for use of RDP",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680427",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_port:3389"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_28",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for volume shadow copy deletes",
+                "shadow_copies"
+            ],
+            "title": "Hunt for volume shadow copy deletes",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680428",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:delete AND process_cmdline:shadows"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_29",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for disabling of boot loader recovery",
+                "bootloader_disable"
+            ],
+            "title": "Hunt for disabling of boot loader recovery",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680429",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:fdisk\\ /mbr OR process_cmdline:cipher"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_30",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for file sharing apps",
+                "filesharing"
+            ],
+            "title": "Hunt for file sharing apps",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680430",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:ftp.exe OR process_name:onedrive.exe OR process_name:dropbox.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_31",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for binaries downloaded from internet",
+                "internet_binary_download"
+            ],
+            "title": "Hunt for binaries downloaded from internet",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 1,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680431",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:iexplore.exe OR process_name:firefox.exe OR process_name:chrome.exe) AND filemod_name:*.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_32",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for HTTP in command lines",
+                "http_cmdline"
+            ],
+            "title": "Hunt for HTTP in command lines",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680432",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:http"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_33",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for Base64 in command lines",
+                "powershell_obfuscation"
+            ],
+            "title": "Hunt for Base64 in command lines",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680433",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe AND process_cmdline:FromBase64String"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_34",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for JAVA RATs",
+                "uncommon_rats"
+            ],
+            "title": "Hunt for JAVA RATs",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680434",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:javaw.exe AND (childproc_name:cmd.exe AND childproc_name:attrib.exe)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_35",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for SVCHOST.exe without the traditional parent of SERVICES.exe:",
+                "unusual_parent"
+            ],
+            "title": "Hunt for SVCHOST.exe without the traditional parent of SERVICES.exe:",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680435",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:svchost.exe AND NOT parent_name:services.exe AND parent_name:*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_36",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for hidden powershell",
+                "powershell_obfuscation"
+            ],
+            "title": "Hunt for hidden powershell",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680436",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe AND process_cmdline:hidden"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_37",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for Obfuscated powershell",
+                "powershell_obfuscation"
+            ],
+            "title": "Hunt for Obfuscated powershell",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680437",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe AND process_cmdline:Encoded-Command"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_38",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for Obfuscated powershell 2",
+                "powershell_obfuscation"
+            ],
+            "title": "Hunt for Obfuscated powershell 2",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680438",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe AND process_cmdline:iex"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_39",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for Powershell download commands",
+                "http_cmdline"
+            ],
+            "title": "Hunt for Powershell download commands",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680439",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell.exe AND process_cmdline:http"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_40",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for encoded Powershell processes",
+                "powershell_obfuscation"
+            ],
+            "title": "Hunt for encoded Powershell processes",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680440",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:powershell* AND (process_cmdline:*\\^* OR process_cmdline:\\-Enc OR process_cmdline:\\-NoP OR process_cmdline:\\-Exec OR process_cmdline:bypass OR process_cmdline:hidden OR process_cmdline:\\-EncodedCommand OR process_cmdline:IEX OR process_cmdline:Invoke-Expression)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_41",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for unsigned unknown wmiprve system children",
+                "unsigned_system_children"
+            ],
+            "title": "Hunt for unsigned unknown wmiprve system children",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680441",
+                    "match_type": "query",
+                    "values": [
+                        "parent_name:wmiprvse.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED -legacy:true"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_42",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for children of cscript and wscript",
+                "cscript_wscript_children"
+            ],
+            "title": "Hunt for children of cscript and wscript",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 2,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680442",
+                    "match_type": "query",
+                    "values": [
+                        "parent_name:csript.exe OR parent_name:wscript.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_43",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for PowerShell in Services",
+                "powershell_services"
+            ],
+            "title": "Hunt for PowerShell in Services",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680443",
+                    "match_type": "query",
+                    "values": [
+                        "(parent_name:services.exe OR parent_name:svchost.exe) AND process_name:powershell.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_44",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Powershell Web Client access",
+                "powershell_webclient"
+            ],
+            "title": "Powershell Web Client access",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680444",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:*WebClient AND process_cmdline:*.ps1"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_45",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "All processes, which have image files that have executed from Temp Folder and not signed",
+                "unsigned_temp"
+            ],
+            "title": "All processes, which have image files that have executed from Temp Folder and not signed",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680445",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:*temp\\\\* AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_46",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for unsigned drivers",
+                "unsigned_drivers"
+            ],
+            "title": "Hunt for unsigned drivers",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680446",
+                    "match_type": "query",
+                    "values": [
+                        "modload_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_47",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for modified hosts files",
+                "host_file_modification"
+            ],
+            "title": "Hunt for modified hosts files",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680447",
+                    "match_type": "query",
+                    "values": [
+                        "filemod_name:C\\:\\\\windows\\\\system32\\\\drivers\\\\etc\\\\hosts"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_48",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for email related assets running exchange, lotus, smtp, pop3, imap, etc",
+                "asset_mapping"
+            ],
+            "title": "Hunt for email related assets running exchange, lotus, smtp, pop3, imap, etc",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680448",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:outlook.exe OR process_name:notes.exe) AND (netconn_port:25 OR netconn_port:110 OR netconn_port:143 OR netconn_port:465 OR netconn_port:587 OR netconn_port:993)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_49",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Has suspicious internal connections",
+                "suspect_netconns"
+            ],
+            "title": "Has suspicious internal connections",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680449",
+                    "match_type": "query",
+                    "values": [
+                        "(process_name:ftp.exe AND NOT netconn_port:21) OR ((process_name:ssh* OR process_name:putty.exe) AND NOT netconn_port:22)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_50",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "High number of internal connections",
+                "suspect_netconns"
+            ],
+            "title": "High number of internal connections",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680450",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_count:[500 TO *] AND (netconn_ipv4:10.* OR netconn_ipv4:192.* OR netconn_ipv4:172.*)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_51",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Absolute high number of internal outgoing embroyonic connections",
+                "suspect_netconns"
+            ],
+            "title": "Absolute high number of internal outgoing embroyonic connections",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680451",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_count:[500 TO *] AND netconn_failed:true"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_52",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "First execution of downloaded file",
+                "penetration_vectors"
+            ],
+            "title": "First execution of downloaded file",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680452",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:downloads\\\\* OR process_name:Content.Outlook\\\\*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_53",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Processes with autorun registry key",
+                "autorun_persistence"
+            ],
+            "title": "Processes with autorun registry key",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 4,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680453",
+                    "match_type": "query",
+                    "values": [
+                        "regmod_name:CurrentVersion\\\\Run*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_54",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Scheduled task executed from temp",
+                "schedtask_temp"
+            ],
+            "title": "Scheduled task executed from temp",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680454",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:temp\\\\* AND parent_name:schtasks.exe OR parent_name:taskeng.exe OR parent_name:taskhostex.exe OR parent_name:Backgroundtaskhost.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_55",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Scheduled task executed from temp 2",
+                "schedtask_temp"
+            ],
+            "title": "Scheduled task executed from temp 2",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680455",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:temp\\\\* AND parent_name:schtasks.exe OR parent_name:at.exe OR parent_name:cron*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_56",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Startup windows folder <Search for executable files in a location which usually saves shortcuts>",
+                "windows_startup"
+            ],
+            "title": "Startup windows folder <Search for executable files in a location which usually saves shortcuts>",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680456",
+                    "match_type": "query",
+                    "values": [
+                        "filemod_name:Start\\ Menu\\\\Programs\\\\Startup\\\\* OR process_name:Start\\ Menu\\\\Programs\\\\Startup\\\\*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_57",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Runas",
+                "hunt_runas"
+            ],
+            "title": "Runas",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 3,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680457",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:runas.exe OR process_cmdline:runas"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_58",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Process hierarchy",
+                "unusual_invocation"
+            ],
+            "title": "Process hierarchy",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 8,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680458",
+                    "match_type": "query",
+                    "values": [
+                        "parent_name:chrome.exe AND process_name:cmd.exe AND childproc_name:powershell.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_59",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Unsigned process which is a child or a grandchild of wmiprvse.exe and is executed with system",
+                "lateral_movement"
+            ],
+            "title": "Unsigned process which is a child or a grandchild of wmiprvse.exe and is executed with system",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680459",
+                    "match_type": "query",
+                    "values": [
+                        "process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED AND parent_name:wmiprvse.exe AND process_username:SYSTEM"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_60",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Execution of unsigned child or grandchild by wmic.exe",
+                "wmic_unsigned_child"
+            ],
+            "title": "Execution of unsigned child or grandchild by wmic.exe",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680460",
+                    "match_type": "query",
+                    "values": [
+                        "parent_name:wmic.exe AND process_publisher_state:FILE_SIGNATURE_STATE_NOT_SIGNED"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_61",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Pass the ticket",
+                "pass_the_ticket"
+            ],
+            "title": "Pass the ticket",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680461",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:\"kerberos::golden\" OR process_cmdline:\"kerberos::ptt\""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_62",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Pass the Hash (tool example)",
+                "pass_the_hash"
+            ],
+            "title": "Pass the Hash (tool example)",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 9,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680462",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:SEKURLSA"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_63",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Obfuscate/Encode with Certutil",
+                "certutil_obfuscation"
+            ],
+            "title": "Obfuscate/Encode with Certutil",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 7,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680463",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:certutil.exe AND process_cmdline:\\-encode*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_64",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Mac - Locate Hidden Users",
+                "mac_hidden_users"
+            ],
+            "title": "Mac - Locate Hidden Users",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680464",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:dscl AND process_cmdline:*create*"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_65",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Credential Theft - Linux",
+                "linux_cred_theft"
+            ],
+            "title": "Credential Theft - Linux",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680465",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:cat AND process_cmdline:sudoers"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_66",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Compiled HTML Code execution",
+                "html_code_execution"
+            ],
+            "title": "Compiled HTML Code execution",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680466",
+                    "match_type": "query",
+                    "values": [
+                        "process_cmdline:*.chm AND childproc_name:cmd.exe"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_67",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Ransomware Extensions",
+                "ransomware"
+            ],
+            "title": "Ransomware Extensions",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 10,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680467",
+                    "match_type": "query",
+                    "values": [
+                        "((filemod_name:*.*CERBER*  OR filemod_name:*.*WASTED* OR filemod_name:*.0X0 OR filemod_name:*.0X009D8A OR filemod_name:*.0X5BM OR filemod_name:*.1999 OR filemod_name:*.1CBU1 OR filemod_name:*.1TXT OR filemod_name:*.342 OR filemod_name:*.3NCRY OR filemod_name:*.3P7M OR filemod_name:*.3RNU OR filemod_name:*.3V3R1S OR filemod_name:*.492 OR filemod_name:*.4RW5RW OR filemod_name:*.666 OR filemod_name:*.725 OR filemod_name:*.726 OR filemod_name:*.73I87A OR filemod_name:*.777 OR filemod_name:*.7H9R OR filemod_name:*.7ZIPPER OR filemod_name:*.8LOCK8 OR filemod_name:*._____ OR filemod_name:*.__DILMAV1 OR filemod_name:*._AIRACROPENCRYPTED OR filemod_name:*._RYP OR filemod_name:*.A5ZFN OR filemod_name:*.AAA OR filemod_name:*.ABC) AND -process_name:splunkd.exe)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_68",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Nirsoft",
+                "nirsoft"
+            ],
+            "title": "Nirsoft",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680468",
+                    "match_type": "query",
+                    "values": [
+                        "(process_publisher:Nir\\ Sofer)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_69",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Non-Microsoft Netconns",
+                "office_unusual_netconns"
+            ],
+            "title": "Non-Microsoft Netconns",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680469",
+                    "match_type": "query",
+                    "values": [
+                        "((process_name:winword.exe OR process_name:excel.exe OR process_name: powerpnt.exe) AND (netconn_domain:/[^.]+(\\.[^.]+)+&@&~(.*live.com)/ AND netconn_domain:/[^.]+(\\.[^.]+)+&@&~(.*office.net)/ AND netconn_domain:/[^.]+(\\.[^.]+)+&@&~(.*microsoft.com)/ AND netconn_domain:/[^.]+(\\.[^.]+)+&@&~(.*office.com)/))"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mayers_magic_queries_71",
+            "timestamp": 1647366804,
+            "tags": [
+                "Mayers_Magic_Queries",
+                "Hunt for binaries with dual extension 2",
+                "process_anomalies"
+            ],
+            "title": "Hunt for binaries with dual extension 2",
+            "description": "This feed is comprised of curated queries provided by Patrick Mayer, on the Carbon Black SE team. This feed contains queries ranging from threat-hunting building blocks, to more high fidelity malicious activity IOCs. All Reports/IOCs are tagged based on category of query, and the name of the report, for custom WL generation based on the core query content.\n\nThis feed would likely require tuning of some of the more threat-hunting-centric queries before being viable for alerting. Enabling for overlay context and tuning recommended.",
+            "severity": 6,
+            "iocs_v2": [
+                {
+                    "id": "Mayers_Magic_Queries_164736680471",
+                    "match_type": "query",
+                    "values": [
+                        "process_name:/[^\\/]+\\\\.[^\\/]{2,3}\\\\.[^\\/]{2,3}/"
+                    ]
+                }
+            ]
+        }
+    ]
+}

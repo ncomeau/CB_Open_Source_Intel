@@ -1,0 +1,619 @@
+{
+    "feedinfo": {
+        "name": "abuse.ch_ssl",
+        "owner": "abuse.ch",
+        "provider_url": "https://sslbl.abuse.ch/",
+        "summary": "An open source Feed from abuse.ch, looking for SSLBL Botnet C2 IP Blacklist's. abuse.ch is a research project at the Bern University of Applied Sciences (BFH). It is the home of a couple of projects that are helping internet service providers and network operators protecting their infrastructure from malware. IT-Security researchers, vendors and law enforcement agencies rely on data from abuse.ch, trying to make the internet a safer place.",
+        "category": "Open Source"
+    },
+    "reports": [
+        {
+            "id": "abuse.ch_ssl_0",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_0",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:185.140.53.63 AND netconn_port:8721"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_1",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_1",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:178.208.94.214 AND netconn_port:1234"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_2",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_2",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:103.89.88.236 AND netconn_port:1998"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_3",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_3",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:194.104.136.213 AND netconn_port:443"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_4",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_4",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:182.191.220.118 AND netconn_port:1555"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_5",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_5",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:163.123.142.251 AND netconn_port:6606"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_6",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_6",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:194.31.98.58 AND netconn_port:2405"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_7",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_7",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:3.132.159.158 AND netconn_port:15838"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_8",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_8",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:139.60.161.165 AND netconn_port:443"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_9",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_9",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:154.212.139.228 AND netconn_port:1337"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_10",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_10",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:91.240.118.99 AND netconn_port:2780"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_11",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_11",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:91.193.75.135 AND netconn_port:47582"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_12",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_12",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:159.69.234.4 AND netconn_port:4782"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_13",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_13",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:89.223.71.59 AND netconn_port:5856"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_14",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_14",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:208.51.61.44 AND netconn_port:128"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_15",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_15",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:212.68.34.230 AND netconn_port:6606"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_16",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_16",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:207.32.217.246 AND netconn_port:7707"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_17",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_17",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:172.247.14.52 AND netconn_port:12530"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_18",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_18",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:144.126.209.63 AND netconn_port:6606"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_19",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_19",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:159.69.234.3 AND netconn_port:4041"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_20",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_20",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:159.69.234.3 AND netconn_port:7707"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_21",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_21",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:52.15.81.204 AND netconn_port:8808"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_22",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_22",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:129.151.83.165 AND netconn_port:7177"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_23",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_23",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:41.225.46.176 AND netconn_port:1234"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_24",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_24",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:141.255.144.117 AND netconn_port:2000"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_25",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_25",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:85.202.169.69 AND netconn_port:4573"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_26",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_26",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:3.141.177.1 AND netconn_port:19070"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_27",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_27",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:104.128.189.120 AND netconn_port:8808"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_28",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_28",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:45.242.93.241 AND netconn_port:5"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_29",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_29",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:103.153.73.37 AND netconn_port:8808"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_30",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_30",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:103.133.111.110 AND netconn_port:5200"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "abuse.ch_ssl_31",
+            "timestamp": 1647883363,
+            "tags": [
+                "abuse.ch_ssl"
+            ],
+            "title": "abuse.ch SSLBL Botnet C2 IP Blacklist",
+            "description": "Looking for IPv4 and Port associated with SSLBL Botnet C2",
+            "severity": 5,
+            "iocs_v2": [
+                {
+                    "id": "abuse.ch_ssl_31",
+                    "match_type": "query",
+                    "values": [
+                        "netconn_ipv4:79.134.225.8 AND netconn_port:2256"
+                    ]
+                }
+            ]
+        }
+    ]
+}
