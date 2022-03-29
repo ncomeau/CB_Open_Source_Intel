@@ -34,8 +34,8 @@
                     id: new_wl
                     required: True
                     pos_hint: {'center_x': .5, 'center_y': .9}
-                    size_hint_x: None
-                    width: "400dp"
+                    size_hint_x: 0.4
+                    #width: "400dp"
                     hint_text: "Input Watchlist Name"
                     on_focus: if self.focus: root.menu.open()
 
@@ -44,8 +44,8 @@
                     required: True
                     mode: "rectangle"
                     pos_hint: {'center_x': .2, 'center_y': .75}
-                    size_hint_x: None
-                    width: "200dp"
+                    size_hint_x: 0.2
+                    #width: "200dp"
                     hint_text: "Input Report Name"
 
                 MDTextField:
@@ -109,7 +109,7 @@
                 MDFillRoundFlatButton:
                     pos_hint:{"center_x":0.5,"center_y":0.2}
                     size_hint: 0.5, 0.1
-                    font_size: 40
+                    font_size: 24
                     text: "Convert Query"
                     color: (0,0,0,1)
                     #icon: "database-arrow-up-outline"
@@ -191,7 +191,7 @@
                 MDFillRoundFlatButton:
                     pos_hint:{"center_x":0.5,"center_y":0.2}
                     size_hint: 0.5, 0.1
-                    font_size: 40
+                    font_size: 25
                     text: "Convert Query"
                     color: (0,0,0,1)
                     #icon: "database-arrow-up-outline"

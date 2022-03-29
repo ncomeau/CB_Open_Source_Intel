@@ -10,92 +10,60 @@
         anchor_x: "center"
         anchor_y: "top"
         MDToolbar:
-            title: "CB Open Source Intel"
+            title: "CB Open Source Intel - Login"
             anchor_title: "center"
 
-    MDCard:
-        size_hint: None, None
-        size: 650, 900
-        pos_hint: {"center_x":0.5,"center_y":0.45}
-        elevation: 10
-        padding: 20
-        spacing: 20
-        orientation: 'vertical'
+    FloatLayout:
 
-        MDLabel:
-            text: "Enter Creds"
-            font_style: "H6"
-            font_size: 40
-            halign: 'center'
-            size_hint_y: None
-            height: self.texture_size[1]
-            padding_y: 10
-
-        Widget:
-            size_hint_y: None
-            height: 75
+        Image:
+            source: "logos/Cb_Open_Source_Intel.png"
+            size_hint: 0.6,0.2
+            pos_hint: {"center_x":0.5, "center_y":0.77}
 
         ClickableTextFieldRound:
             id: api_key
-
+            pos_hint: {"center_x":0.5, "center_y":0.6}
+            size_hint: 0.6,None
             width: 180
             font_size:23
             hint_text: "API Secret Key"
-            size_hint: 0.95, None
-            pos_hint: {"center_x":0.5}
-
-        Widget:
-            size_hint_y: None
-            height: 1
 
         MDTextFieldRound:
             id: api_id
-
+            pos_hint: {"center_x":0.5, "center_y":0.5}
+            size_hint: 0.5,None
             password: False
             hint_text: "API ID"
             icon_left: "identifier"
-            size_hint: 0.95, None
-            pos_hint:{"center_x":0.5,}
             padding:
                 self._lbl_icon_left.texture_size[1] + dp(10) if self.icon_left else dp(15),                 (self.height / 2) - (self.line_height / 2),                 self._lbl_icon_right.texture_size[1] + dp(20),                 0
 
-        Widget:
-            size_hint_y: None
-            height: 1
 
         MDTextFieldRound:
             id: org_key
-
+            pos_hint: {"center_x":0.5, "center_y":0.4}
+            size_hint: 0.4,None
             password: False
             hint_text: "Org Key"
             icon_left: "weather-cloudy"
-            size_hint: 0.75, None
-            pos_hint:{"center_x":0.5,}
             padding:
                 self._lbl_icon_left.texture_size[1] + dp(10) if self.icon_left else dp(15),                 (self.height / 2) - (self.line_height / 2),                 self._lbl_icon_right.texture_size[1] + dp(20),                 0
 
-        Widget:
-            size_hint_y: None
-            height: 35
 
         MDRoundFlatIconButton:
             icon: "upload"
-            pos_hint:{"center_x":0.5,}
-            size_hint: 0.5, 0.05
-            font_size: 24
+            pos_hint: {"center_x":0.5, "center_y":0.3}
+            size_hint: 0.2, 0.05
             height:1
             text: "Upload Creds"
             md_bg_color: 0, 0.7, 0.2, 1
             on_release:
                 root.file_manager_open()
 
-        Widget:
-            size_hint_y: None
-            height: 15
 
         MDFillRoundFlatButton:
-            pos_hint:{"center_x":0.5,}
-            size_hint: 0.6, 0.05
+            pos_hint:{"center_x":0.5,"center_y":0.2}
+            size_hint: 0.6, 0.07
             font_size: 24
             height:1
             text: "Submit"
@@ -105,22 +73,19 @@
             on_release:
                 root.loginBtn()
 
-        Widget:
-            size_hint_y: None
-            height: 15
-
         ActiveCBR:
-
+            pos_hint:{"center_x":0.5,"center_y":0.1}
+            size_hint: 0.6, 0.05
     MDLabel:
         text: "Software Version: alpha-3.1"
-        font_size: 18
-        pos_hint: {'x':.425,'y':-0.45}
+        font_size: 9
+        pos_hint: {'x':.405,'y':-0.45}
         #pos_hint:{"center_x":0.5, "center_y":0.1}
 
     MDLabel:
         text: "Author: Nicholas Comeau"
-        font_size: 18
-        pos_hint: {'x':.425,'y':-0.475}
+        font_size: 9
+        pos_hint: {'x':.405,'y':-0.475}
 
 
 <ClickableTextFieldRound>:
